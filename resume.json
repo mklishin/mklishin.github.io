@@ -1,0 +1,329 @@
+{
+  "basics": {
+    "name": "Михаил Клишин",
+    "label": "Product Manager B2C/B2B",
+    "email": "your.email@example.com",
+    "phone": "+7 (XXX) XXX-XX-XX",
+    "url": "https://t.me/XXXX",
+    "summary": "Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами и разработкой и запуске новых продуктов. Умею как discovery, так и delivery",
+    "location": {
+      "city": "Москва",
+      "countryCode": "RU"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mikhail-klishin",
+        "url": "www.linkedin.com/in/mklishin/"
+      },
+      {
+        "network": "Habr Career",
+        "username": "username2",
+        "url": "https://career.habr.com/username2"
+      },
+      {
+        "network": "Telegram",
+        "url": "https://t.me/m_k11"
+      }
+    ],
+    "image": "https://avatars.githubusercontent.com/u/281910308?s=400&u=6404e0f87eaeadf08bb3ac39b4011c4269c87a7b&v=4"
+  },
+  "work": [
+    {
+      "company": "Альфа-Банк",
+      "position": "Руководитель цифровых продуктов B2C (кредитные карты)",
+      "url": "https://alfabank.ru",
+      "startDate": "2025-08",
+      "endDate": "2026-01",
+      "summary": "Развитие сайта alfabank.ru и клиентского пути онлайн-заказа кредитных карт.",
+      "highlights": [
+        "Повысил CTR с 16% до 24%, ответственен за CAC и CPA в партнерских каналах",
+        "Запустил новые карточные продукты с онлайн-оформлением",
+        "Разработал и запустил рекламные предложения, витрину офферов и улучшил UI",
+        "Провел интеграции со скорингом, OCRM, Alfa-ID, СМЭВ ЕСИА",
+        "Ежедневный мониторинг аналитики в Superset, Яндекс.Метрика, Альфа-Аналитика",
+        "400+ страниц в проде, MAU ~500 000"
+      ]
+    },
+    {
+      "company": "EdTech, государственная организация",
+      "position": "Technical Product Owner B2C/B2G",
+      "startDate": "2024-07",
+      "endDate": "2025-08",
+      "summary": "Лидил разработку грантовой платформы и развитие внутренних продуктов.",
+      "highlights": [
+        "Запустил грантовую платформу с 0 до MVP за 4 месяца",
+        "Управлял двумя командами разработки BE, FE",
+        "MAU 650 000+, Reach контентного направления — 5 млн зрителей",
+        "Провел интеграцию с ГИС «Электронный бюджет», 1С ЭДО, ЕСИА, Keycloak",
+        "Построил аналитику (Datalens, Grafana, ELK, 100 000+ событий)",
+        "Перевод монолита в микросервисы, формирование PRD, дорожных карт и KPI"
+      ]
+    },
+    {
+      "company": "1X Bet",
+      "position": "Product Manager Content B2C",
+      "startDate": "2023-11",
+      "endDate": "2024-07",
+      "summary": "Развитие контентного направления в iGaming (MENA, CIS, India).",
+      "highlights": [
+        "Разработал контентную стратегию для новых регионов",
+        "Управлял метриками GGR, LTV, ARPU, Retention",
+        "Запустил продукт в Сомали (+~50 000 MAU)",
+        "Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD"
+      ]
+    },
+    {
+      "company": "Авито",
+      "position": "Product Monetization Manager B2C/B2B (Вертикаль Авто)",
+      "url": "https://avito.ru",
+      "startDate": "2022-06",
+      "endDate": "2024-02",
+      "summary": "Стратегическое управление монетизацией SMB вертикали Авто.",
+      "highlights": [
+        "Вырастил выручку на 25% год к году (1.5M$/мес)",
+        "Увеличил долю продукта в структуре выручки с 23% до 31%",
+        "Управлял 150 000+ клиентами, поднял retention до 90+%",
+        "Внедрил автоматические CRM-коммуникации и user flows",
+        "Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход"
+      ]
+    },
+    {
+      "company": "VK",
+      "position": "Business Development Manager (VK Образование)",
+      "url": "https://vk.company",
+      "startDate": "2022-01",
+      "endDate": "2022-06",
+      "highlights": [
+        "Развитие EdTech и HRTech направления",
+        "Выиграл тендер Минпросвещения на олимпиады по ИИ",
+        "Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом"
+      ]
+    },
+    {
+      "company": "BestDoctor",
+      "position": "Senior Business Development Manager (MedTech/InsurTech)",
+      "url": "https://bestdoctor.ru",
+      "startDate": "2021-06",
+      "endDate": "2022-01",
+      "highlights": [
+        "Продажи корпоративных ДМС и wellbeing продуктов",
+        "Разработал новый продукт психологической помощи (от идеи до go-to-market)"
+      ]
+    },
+    {
+      "company": "TalentTech",
+      "position": "Business Development Manager HRTech",
+      "url": "https://talenttech.ru",
+      "startDate": "2020-05",
+      "endDate": "2021-08",
+      "highlights": [
+        "Продажи ATS, HCM, LXP решений",
+        "Провел первые экспортные сделки (Казахстан)",
+        "Участвовал в custdev и подготовке требований для продуктовой команды"
+      ]
+    },
+    {
+      "company": "makelove",
+      "position": "Senior Sales Manager",
+      "url": "https://makeloveagency.com",
+      "startDate": "2017-11",
+      "endDate": "2020-05",
+      "highlights": [
+        "B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Российский Государственный Гуманитарный Университет (РГГУ)",
+      "area": "Управление, Реклама и PR",
+      "studyType": "Высшее образование",
+      "endDate": "2018"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Project Management Professional",
+      "date": "2024",
+      "url": "",
+      "issuer": "Google"
+    },
+    {
+      "name": "Jira Fundamentals",
+      "date": "2024",
+      "issuer": "Atlassian ",
+      "url": "https://university.atlassian.com/student/award/VnZCjroNzAwgyVq6CJhhknTM"
+    },
+    {
+      "name": "Strategic and Innovation Management",
+      "institution": "Copenhagen Business School",
+      "date": "2023",
+      "issuer": "Copenhagen Business School",
+      "url": "https://coursera.org/share/7bea837179b9420707404b7f4dd184bd"
+    },
+    {
+      "name": "Product Analytics",
+      "date": "2024",
+      "issuer": "DevToDev",
+      "url": "https://legacy.edvice.pro/education/online-course/certificate/h5Ia0b5kslW6paawOG3w9w/"
+    },
+    {
+      "name": "Product Growth Skills Test",
+      "date": "2024",
+      "issuer": "GoPractice",
+      "url": "https://gopractice.io/sat/cert/1021467"
+    }
+  ],
+  "skills": [
+    {
+      "0": "P",
+      "1": "r",
+      "2": "o",
+      "3": "d",
+      "4": "u",
+      "5": "c",
+      "6": "t",
+      "7": " ",
+      "8": "M",
+      "9": "a",
+      "10": "n",
+      "11": "a",
+      "12": "g",
+      "13": "e",
+      "14": "m",
+      "15": "e",
+      "16": "n",
+      "17": "t",
+      "name": "Product Management",
+      "level": "Senior"
+    },
+    {
+      "0": "T",
+      "1": "e",
+      "2": "c",
+      "3": "h",
+      "4": "n",
+      "5": "i",
+      "6": "c",
+      "7": "a",
+      "8": "l",
+      "9": " ",
+      "10": "P",
+      "11": "r",
+      "12": "o",
+      "13": "d",
+      "14": "u",
+      "15": "c",
+      "16": "t",
+      "17": " ",
+      "18": "O",
+      "19": "w",
+      "20": "n",
+      "21": "e",
+      "22": "r",
+      "name": "PRD & Requirements",
+      "level": "Senior"
+    },
+    {
+      "0": "R",
+      "1": "o",
+      "2": "a",
+      "3": "d",
+      "4": "m",
+      "5": "a",
+      "6": "p",
+      "7": "p",
+      "8": "i",
+      "9": "n",
+      "10": "g",
+      "name": "A/B Testing",
+      "level": "Middle+"
+    },
+    {
+      "0": "P",
+      "1": "R",
+      "2": "D",
+      "3": " ",
+      "4": "&",
+      "5": " ",
+      "6": "R",
+      "7": "e",
+      "8": "q",
+      "9": "u",
+      "10": "i",
+      "11": "r",
+      "12": "e",
+      "13": "m",
+      "14": "e",
+      "15": "n",
+      "16": "t",
+      "17": "s",
+      "name": "Analytics",
+      "level": "Middle+"
+    },
+    {
+      "0": "A",
+      "1": "/",
+      "2": "B",
+      "3": " ",
+      "4": "T",
+      "5": "e",
+      "6": "s",
+      "7": "t",
+      "8": "i",
+      "9": "n",
+      "10": "g",
+      "name": "Team Leadership",
+      "level": "Senior"
+    },
+    {
+      "0": "C",
+      "1": "J",
+      "2": "M",
+      "name": "Backlog Management",
+      "level": "Senior"
+    },
+    {
+      "0": "U",
+      "1": "s",
+      "2": "e",
+      "3": "r",
+      "4": " ",
+      "5": "R",
+      "6": "e",
+      "7": "s",
+      "8": "e",
+      "9": "a",
+      "10": "r",
+      "11": "c",
+      "12": "h",
+      "name": "SQL",
+      "level": "Middle"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Русский",
+      "fluency": "Native"
+    },
+    {
+      "language": "Английский",
+      "fluency": "C2"
+    },
+    {
+      "language": "Сербский",
+      "fluency": "B1"
+    }
+  ],
+  "projects": [],
+  "publications": [
+    {
+      "name": "VK Skolkovo StartUp Village Junior",
+      "publisher": "Skolkovo",
+      "releaseDate": "2022",
+      "url": "https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/",
+      "summary": ""
+    }
+  ]
+}
