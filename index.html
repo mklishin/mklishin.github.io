@@ -4,20 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Михаил Клишин — Product Manager</title>
-  <script src="https://unpkg.com/resume-cli@3.0.0/dist/resume.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { margin: 0; font-family: system-ui, sans-serif; }
-    resume-render { display: block; max-width: 1000px; margin: 20px auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.65;
+      color: #333;
+    }
+    h1 { font-size: 2.7em; margin: 0 0 8px 0; color: #1a1a1a; }
+    .title { font-size: 1.4em; color: #2c3e50; margin-bottom: 20px; }
+    .contact { margin: 20px 0; font-size: 1.1em; }
+    .contact a { color: #0066cc; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+      margin-top: 45px;
+    }
+    h3 { margin: 25px 0 8px 0; color: #2c3e50; }
+    .date { color: #555; font-size: 0.95em; margin-bottom: 12px; }
+    ul { padding-left: 22px; }
+    li { margin: 9px 0; }
+    .highlight { font-weight: 500; }
   </style>
 </head>
 <body>
 
-  <resume-render src="resume.json" theme="professional"></resume-render>
+  <h1>Михаил Клишин</h1>
+  <p class="title">Product Manager / Technical Product Owner (B2C & B2G)</p>
 
-  <script>
-    // You can change theme here: professional, modern, slate, kendall, etc.
-    document.querySelector('resume-render').setAttribute('theme', 'professional');
-  </script>
+  <div class="contact">
+    <i class="fas fa-envelope"></i> your.email@example.com &nbsp; | &nbsp; 
+    <i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX &nbsp; | &nbsp; 
+    <i class="fas fa-map-marker-alt"></i> Москва &nbsp; | &nbsp; 
+    <a href="https://t.me/m_k11" target="_blank"><i class="fab fa-telegram"></i> @m_k11</a> &nbsp; | &nbsp; 
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+
+  <h2>О себе</h2>
+  <p>Product Manager с более чем 8-летним опытом в запуске и развитии цифровых продуктов B2C и B2G. Сильные компетенции в росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами, построении CJM и интеграциях с государственными системами. Умею эффективно работать как в discovery, так и в delivery.</p>
+
+  <h2>Опыт работы</h2>
+
+  <h3>Руководитель цифровых продуктов B2C (Кредитные карты)</h3>
+  <p class="date"><strong>Альфа-Банк</strong> — Август 2025 — Январь 2026 (6 месяцев)</p>
+  <ul>
+    <li>Развитие сайта alfabank.ru и клиентского пути онлайн-заказа кредитных карт</li>
+    <li>Повысил CTR с 16% до 24%, отвечал за CAC и CPA в партнерских каналах</li>
+    <li>Запуск новых карточных продуктов с онлайн-оформлением</li>
+    <li>Интеграции со скорингом, OC RM, Alfa-ID, СМЭВ ЕСИА</li>
+    <li>MAU ~500 000, более 400 страниц в продакшене</li>
+  </ul>
+
+  <h3>Technical Product Owner B2C/B2G</h3>
+  <p class="date"><strong>Российское общество «Знание»</strong> — Июль 2024 — Август 2025 (1 год 2 месяца)</p>
+  <ul>
+    <li>Запустил грантовую платформу с 0 до MVP за 4 месяца</li>
+    <li>Управлял двумя командами разработки (Python, Django, Vue, Kubernetes)</li>
+    <li>MAU 650 000+, контентный reach — 5 млн зрителей</li>
+    <li>Интеграции с ГИС «Электронный бюджет», 1С ЭДО, ЕСИА, Keycloak</li>
+    <li>Построил аналитику (Datalens, Grafana, ELK Stack)</li>
+  </ul>
+
+  <h3>Product Manager Content B2C</h3>
+  <p class="date"><strong>1X Bet (iGaming)</strong> — Ноябрь 2023 — Июль 2024 (9 месяцев)</p>
+  <ul>
+    <li>Запуск продукта в новом регионе (Сомали) — ~50 000 MAU</li>
+    <li>Разработка контентной стратегии для MENA, CIS, India</li>
+    <li>Управление метриками GGR, LTV, ARPU, Retention</li>
+  </ul>
+
+  <h3>Product Monetization Manager B2C/B2B</h3>
+  <p class="date"><strong>Авито (Авто вертикаль)</strong> — Июнь 2022 — Февраль 2024 (1 год 9 месяцев)</p>
+  <ul>
+    <li>Вырастил выручку на 25% год к году (1.5M$/мес)</li>
+    <li>Увеличил долю продукта в структуре выручки с 23% до 31%</li>
+    <li>Управлял 73 000+ клиентами, retention 90+%</li>
+    <li>Внедрил автоматические CRM-коммуникации и user flows</li>
+  </ul>
+
+  <h3>Business Development Manager (VK Образование)</h3>
+  <p class="date"><strong>VK</strong> — Январь 2022 — Июнь 2022 (6 месяцев)</p>
+  <ul>
+    <li>Выиграл тендер Минпросвещения на олимпиады по ИИ</li>
+    <li>Стратегические партнёрства со Сколково, ВТБ, Газпромнефть и др.</li>
+  </ul>
+
+  <h2>Образование</h2>
+  <p><strong>РГГУ — Факультет Управления, Реклама и PR</strong> (2018)</p>
+
+  <h2>Ключевые навыки</h2>
+  <p><strong>Product:</strong> Roadmapping, PRD, CJM, A/B-тесты, JTBD, RICE, HADI, User Research</p>
+  <p><strong>Delivery & Tech:</strong> Jira, Agile, SQL, Analytics (Superset, Tableau, Grafana), API integration</p>
+  <p><strong>Другое:</strong> Stakeholder Management, Team Leadership, B2B/B2G Sales</p>
+
+  <h2>Языки</h2>
+  <p>Русский — Родной<br>
+     Английский — C2 (в совершенстве)<br>
+     Сербский — B1</p>
+
+  <p style="margin-top: 40px; font-size: 0.9em; color: #666;">
+    Примеры артефактов (Roadmap, ТЗ): 
+    <a href="https://drive.google.com/drive/folders/1Gn5ly_a1jUB3i2FqH5SWqQs16i78ZSLL" target="_blank">Google Drive</a>
+  </p>
 
 </body>
 </html>
