@@ -2,203 +2,174 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Resume JSON</title>
+  <title>Михаил Клишин - Resume</title>
   <style>
-    body {
-      font-family: monospace;
-      white-space: pre;
-      padding: 24px;
-      background: #ffffff;
-      color: #000000;
-    }
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.5; }
+    h1, h2 { margin-bottom: 5px; }
+    .section { margin-top: 30px; }
+    .item { margin-bottom: 15px; }
+    .small { color: #555; }
   </style>
 </head>
 <body>
-{
-  "basics": {
-    "name": "Михаил Клишин",
-    "label": "Product Manager B2C/B2B",
-    "email": "your.email@example.com",
-    "phone": "+7 (XXX) XXX-XX-XX",
-    "url": "https://t.me/XXXX",
-    "summary": "Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами и разработкой и запуске новых продуктов. Умею как discovery, так и delivery",
-    "location": {
-      "city": "Москва",
-      "countryCode": "RU"
-    },
-    "profiles": [
-      {
-        "network": "LinkedIn",
-        "username": "mikhail-klishin",
-        "url": "www.linkedin.com/in/mklishin/"
-      },
-	   {
-        "network": "Habr Career",
-        "username": "username2",
-        "url": "https://career.habr.com/username2"
-      },
-      {
-        "network": "Telegram",
-        "url": "https://t.me/m_k11"
-      }
-    ]
-  },
-  "work": [
-    {
-      "company": "Альфа-Банк",
-      "position": "Руководитель цифровых продуктов B2C (кредитные карты)",
-      "url": "https://alfabank.ru",
-      "startDate": "2025-08",
-      "endDate": "2026-01",
-      "summary": "Развитие сайта alfabank.ru и клиентского пути онлайн-заказа кредитных карт.",
-      "highlights": [
-        "Повысил CTR с 16% до 24%, ответственен за CAC и CPA в партнерских каналах",
-        "Запустил новые карточные продукты с онлайн-оформлением",
-        "Разработал и запустил рекламные предложения, витрину офферов и улучшил UI",
-        "Провел интеграции со скорингом, OCRM, Alfa-ID, СМЭВ ЕСИА",
-        "Ежедневный мониторинг аналитики в Superset, Яндекс.Метрика, Альфа-Аналитика",
-        "400+ страниц в проде, MAU ~500 000"
-      ]
-    },
-    {
-      "company": "EdTech, государственная организация",
-      "position": "Technical Product Owner B2C/B2G",
-      "startDate": "2024-07",
-      "endDate": "2025-08",
-      "summary": "Лидил разработку грантовой платформы и развитие внутренних продуктов.",
-      "highlights": [
-        "Запустил грантовую платформу с 0 до MVP за 4 месяца",
-        "Управлял двумя командами разработки BE, FE",
-        "MAU 650 000+, Reach контентного направления — 5 млн зрителей",
-        "Провел интеграцию с ГИС «Электронный бюджет», 1С ЭДО, ЕСИА, Keycloak",
-        "Построил аналитику (Datalens, Grafana, ELK, 100 000+ событий)",
-        "Перевод монолита в микросервисы, формирование PRD, дорожных карт и KPI"
-      ]
-    },
-    {
-      "company": "1X Bet",
-      "position": "Product Manager Content B2C",
-      "startDate": "2023-11",
-      "endDate": "2024-07",
-      "summary": "Развитие контентного направления в iGaming (MENA, CIS, India).",
-      "highlights": [
-        "Разработал контентную стратегию для новых регионов",
-        "Управлял метриками GGR, LTV, ARPU, Retention",
-        "Запустил продукт в Сомали (+~50 000 MAU)",
-        "Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD"
-      ]
-    },
-    {
-      "company": "Авито",
-      "position": "Product Monetization Manager B2C/B2B (Вертикаль Авто)",
-      "url": "https://avito.ru",
-      "startDate": "2022-06",
-      "endDate": "2024-02",
-      "summary": "Стратегическое управление монетизацией SMB вертикали Авто.",
-      "highlights": [
-        "Вырастил выручку на 25% год к году (1.5M$/мес)",
-        "Увеличил долю продукта в структуре выручки с 23% до 31%",
-        "Управлял 150 000+ клиентами, поднял retention до 90+%",
-        "Внедрил автоматические CRM-коммуникации и user flows",
-        "Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход"
-      ]
-    },
-    {
-      "company": "VK",
-      "position": "Business Development Manager (VK Образование)",
-      "url": "https://vk.company",
-      "startDate": "2022-01",
-      "endDate": "2022-06",
-      "highlights": [
-        "Развитие EdTech и HRTech направления",
-        "Выиграл тендер Минпросвещения на олимпиады по ИИ",
-        "Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом"
-      ]
-    },
-    {
-      "company": "BestDoctor",
-      "position": "Senior Business Development Manager (MedTech/InsurTech)",
-      "url": "https://bestdoctor.ru",
-      "startDate": "2021-06",
-      "endDate": "2022-01",
-      "highlights": [
-        "Продажи корпоративных ДМС и wellbeing продуктов",
-        "Разработал новый продукт психологической помощи (от идеи до go-to-market)"
-      ]
-    },
-    {
-      "company": "TalentTech",
-      "position": "Business Development Manager HRTech",
-      "url": "https://talenttech.ru",
-      "startDate": "2020-05",
-      "endDate": "2021-08",
-      "highlights": [
-        "Продажи ATS, HCM, LXP решений",
-        "Провел первые экспортные сделки (Казахстан)",
-        "Участвовал в custdev и подготовке требований для продуктовой команды"
-      ]
-    },
-    {
-      "company": "makelove",
-      "position": "Senior Sales Manager",
-      "url": "https://makeloveagency.com",
-      "startDate": "2017-11",
-      "endDate": "2020-05",
-      "highlights": [
-        "B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Российский Государственный Гуманитарный Университет (РГГУ)",
-      "area": "Управление, Реклама и PR",
-      "studyType": "Высшее образование",
-      "endDate": "2018"
-    }
-  ],
-  "certificates": [
-    {"name": "Google Professional Certificate - Project Management", "date": "2023"},
-    {"name": "Project Management Professional", "date": "2024"},
-    {"name": "Jira Fundamentals", "date": "2024"},
-    {"name": "Strategic and Innovation Management", "institution": "Copenhagen Business School", "date": "2023"},
-    {"name": "Академия продуктовых менеджеров", "institution": "MADE by VK", "date": "2022"}
-  ],
-  "skills": [
-    "Product Management",
-    "Technical Product Owner",
-    "Roadmapping",
-    "PRD & Requirements",
-    "A/B Testing",
-    "CJM",
-    "User Research",
-    "Agile / Scrum",
-    "Stakeholder Management",
-    "Analytics (Superset, Tableau, Grafana, Yandex Metrika)",
-    "SQL",
-    "Jira",
-    "Business Development",
-    "B2B / B2G Sales",
-    "Team Leadership"
-  ],
-  "languages": [
-    {
-      "language": "Русский",
-      "fluency": "Native"
-    },
-    {
-      "language": "Английский",
-      "fluency": "C2"
-    },
-    {
-      "language": "Сербский",
-      "fluency": "B1"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Дополнительные ссылки, артефакты и портфолио",
-      "url": "TBD"
+
+<h1>Михаил Клишин</h1>
+<div>Product Manager B2C/B2B</div>
+<div>your.email@example.com | +7 (XXX) XXX-XX-XX | https://t.me/XXXX</div>
+<div class="small">Москва, RU</div>
+
+<div class="section">
+  <h2>Summary</h2>
+  <p>Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами и разработкой и запуске новых продуктов. Умею как discovery, так и delivery</p>
+</div>
+
+<div class="section">
+  <h2>Profiles</h2>
+  <div>LinkedIn — www.linkedin.com/in/mklishin/</div>
+  <div>Habr Career — https://career.habr.com/username2</div>
+  <div>Telegram — https://t.me/m_k11</div>
+</div>
+
+<div class="section">
+  <h2>Work Experience</h2>
+
+  <div class="item">
+    <strong>Альфа-Банк</strong> — Руководитель цифровых продуктов B2C (кредитные карты)<br>
+    <span class="small">2025-08 — 2026-01</span>
+    <p>Развитие сайта alfabank.ru и клиентского пути онлайн-заказа кредитных карт.</p>
+    <ul>
+      <li>Повысил CTR с 16% до 24%, ответственен за CAC и CPA в партнерских каналах</li>
+      <li>Запустил новые карточные продукты с онлайн-оформлением</li>
+      <li>Разработал и запустил рекламные предложения, витрину офферов и улучшил UI</li>
+      <li>Провел интеграции со скорингом, OCRM, Alfa-ID, СМЭВ ЕСИА</li>
+      <li>Ежедневный мониторинг аналитики в Superset, Яндекс.Метрика, Альфа-Аналитика</li>
+      <li>400+ страниц в проде, MAU ~500 000</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>EdTech, государственная организация</strong> — Technical Product Owner B2C/B2G<br>
+    <span class="small">2024-07 — 2025-08</span>
+    <p>Лидил разработку грантовой платформы и развитие внутренних продуктов.</p>
+    <ul>
+      <li>Запустил грантовую платформу с 0 до MVP за 4 месяца</li>
+      <li>Управлял двумя командами разработки BE, FE</li>
+      <li>MAU 650 000+, Reach контентного направления — 5 млн зрителей</li>
+      <li>Провел интеграцию с ГИС «Электронный бюджет», 1С ЭДО, ЕСИА, Keycloak</li>
+      <li>Построил аналитику (Datalens, Grafana, ELK, 100 000+ событий)</li>
+      <li>Перевод монолита в микросервисы, формирование PRD, дорожных карт и KPI</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>1X Bet</strong> — Product Manager Content B2C<br>
+    <span class="small">2023-11 — 2024-07</span>
+    <p>Развитие контентного направления в iGaming (MENA, CIS, India).</p>
+    <ul>
+      <li>Разработал контентную стратегию для новых регионов</li>
+      <li>Управлял метриками GGR, LTV, ARPU, Retention</li>
+      <li>Запустил продукт в Сомали (+~50 000 MAU)</li>
+      <li>Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>Авито</strong> — Product Monetization Manager B2C/B2B (Вертикаль Авто)<br>
+    <span class="small">2022-06 — 2024-02</span>
+    <p>Стратегическое управление монетизацией SMB вертикали Авто.</p>
+    <ul>
+      <li>Вырастил выручку на 25% год к году (1.5M$/мес)</li>
+      <li>Увеличил долю продукта в структуре выручки с 23% до 31%</li>
+      <li>Управлял 150 000+ клиентами, поднял retention до 90+%</li>
+      <li>Внедрил автоматические CRM-коммуникации и user flows</li>
+      <li>Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>VK</strong> — Business Development Manager (VK Образование)<br>
+    <span class="small">2022-01 — 2022-06</span>
+    <ul>
+      <li>Развитие EdTech и HRTech направления</li>
+      <li>Выиграл тендер Минпросвещения на олимпиады по ИИ</li>
+      <li>Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>BestDoctor</strong> — Senior Business Development Manager (MedTech/InsurTech)<br>
+    <span class="small">2021-06 — 2022-01</span>
+    <ul>
+      <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
+      <li>Разработал новый продукт психологической помощи (от идеи до go-to-market)</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>TalentTech</strong> — Business Development Manager HRTech<br>
+    <span class="small">2020-05 — 2021-08</span>
+    <ul>
+      <li>Продажи ATS, HCM, LXP решений</li>
+      <li>Провел первые экспортные сделки (Казахстан)</li>
+      <li>Участвовал в custdev и подготовке требований для продуктовой команды</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>makelove</strong> — Senior Sales Manager<br>
+    <span class="small">2017-11 — 2020-05</span>
+    <ul>
+      <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="section">
+  <h2>Education</h2>
+  <div>Российский Государственный Гуманитарный Университет (РГГУ) — Управление, Реклама и PR (Высшее образование, 2018)</div>
+</div>
+
+<div class="section">
+  <h2>Certificates</h2>
+  <ul>
+    <li>Project Management Professional — 2024</li>
+    <li>Jira Fundamentals — 2024</li>
+    <li>Strategic and Innovation Management — 2023</li>
+    <li>Product Analytics — 2024</li>
+    <li>Product Growth Skills Test — 2024</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Skills</h2>
+  <ul>
+    <li>Product Management — Senior</li>
+    <li>PRD & Requirements — Senior</li>
+    <li>A/B Testing — Middle+</li>
+    <li>Analytics — Middle+</li>
+    <li>Team Leadership — Senior</li>
+    <li>Backlog Management — Senior</li>
+    <li>SQL — Middle</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Languages</h2>
+  <ul>
+    <li>Русский — Native</li>
+    <li>Английский — C2</li>
+    <li>Сербский — B1</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Publications</h2>
+  <div>VK Skolkovo StartUp Village Junior — 2022 — https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/</div>
+</div>
+
+</body>
+</html>
     }
   ]
 }
