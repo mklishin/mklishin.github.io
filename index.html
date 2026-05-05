@@ -9,14 +9,31 @@
     .section { margin-top: 30px; }
     .item { margin-bottom: 15px; }
     .small { color: #555; }
+    .header { position: relative; }
+    .avatar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
 
-<h1>Михаил Клишин</h1>
-<div>Product Manager B2C/B2B</div>
-<div>your.email@example.com | +7 (XXX) XXX-XX-XX | https://t.me/m_k11</div>
-<div class="small">Москва, RU</div>
+<div class="header">
+  <img class="avatar" src="https://github.com/mklishin.png" alt="Profile Photo">
+  <h1>Михаил Клишин</h1>
+  <div>Product Manager B2C/B2B</div>
+  <div>
+    <a href="mailto:your.email@example.com">your.email@example.com</a> |
+    <a href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a> |
+    <a href="https://t.me/m_k11">https://t.me/m_k11</a>
+  </div>
+  <div class="small">Москва, RU</div>
+</div>
 
 <div class="section">
   <h2>Summary</h2>
@@ -25,9 +42,10 @@
 
 <div class="section">
   <h2>Profiles</h2>
-  <div>LinkedIn — www.linkedin.com/in/mklishin/</div>
-  <div>Habr Career — https://career.habr.com/username2</div>
-  <div>Telegram — https://t.me/m_k11</div>
+  <div>LinkedIn — <a href="https://www.linkedin.com/in/mklishin/">www.linkedin.com/in/mklishin/</a></div>
+  <div>Habr Career — <a href="https://career.habr.com/username2">https://career.habr.com/username2</a></div>
+  <div>HeadHunter.ru — <a href="https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634">https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634</a></div>
+  <div>Telegram — <a href="https://t.me/m_k11">https://t.me/m_k11</a></div>
 </div>
 
 <div class="section">
@@ -165,13 +183,8 @@
 
 <div class="section">
   <h2>Publications</h2>
-  <div>VK Skolkovo StartUp Village Junior — 2022 — https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/</div>
+  <div>VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/</a></div>
 </div>
 
-</body>
-</html>
-    }
-  ]
-}
 </body>
 </html>
