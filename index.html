@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Михаил Клишин — Product Manager</title>
+  <script src="https://unpkg.com/resume-cli@3.0.0/dist/resume.min.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    resume-render { display: block; max-width: 1000px; margin: 20px auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <resume-render src="resume.json" theme="professional"></resume-render>
+
+  <script>
+    // You can change theme here: professional, modern, slate, kendall, etc.
+    document.querySelector('resume-render').setAttribute('theme', 'professional');
+  </script>
+
+</body>
+</html>
