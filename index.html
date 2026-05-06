@@ -1,225 +1,824 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Михаил Клишин Product Manager B2C, B2B | ex Avito, VK</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.5; }
-    h1, h2 { margin-bottom: 5px; }
-    .section { margin-top: 30px; }
-    .item { margin-bottom: 15px; }
-    .small { color: #555; }
-    .header { position: relative; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Михаил Клишин — Product Manager B2C, B2B | ex Avito, VK</title>
+<meta name="yandex-verification" content="519153342e3e0c27" />
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Product Manager и Technical Product Owner с 5+ летним опытом. ex Avito, VK, Альфа-Банк. B2C, B2B, B2G.">
+<link rel="icon" type="image/png" href="https://github.com/mklishin.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e0ddd8;
+    --accent: #2a4d8f;
+    --bg: #faf9f7;
+    --card: #ffffff;
+    --tag-bg: #eef1f8;
+    --tag-text: #2a4d8f;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 40px 80px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 36px;
+  }
+
+  .header-info { flex: 1 1 0; min-width: 0; }
+
+  .header-info h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+  }
+
+  .header-info .title {
+    font-size: 16px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  .header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .header-meta a { color: var(--muted); }
+  .header-meta a:hover { color: var(--accent); }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid var(--border);
+    margin-top: 4px;
+  }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 40px; }
+
+  .section h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── SUMMARY ── */
+  .summary p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  /* ── PROFILES ── */
+  .profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 14px;
+  }
+
+  .profiles a {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ── WORK EXPERIENCE ── */
+  .job { 
+    margin-bottom: 28px; 
+  }
+
+  .job details {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    overflow: hidden;
+  }
+
+  .job details[open] {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+
+  .job summary {
+    list-style: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .job summary::-webkit-details-marker { display: none; }
+
+  .job summary::after {
+    content: '▼';
+    font-size: 12px;
+    transition: transform 0.2s;
+    color: var(--muted);
+  }
+
+  .job details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  .job-content {
+    padding: 0 20px 20px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+  }
+
+  .job-dates {
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .job-title {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .job-desc {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .job ul li { margin-bottom: 4px; line-height: 1.6; }
+
+  /* ── EDUCATION ── */
+  .edu-item { font-size: 15px; }
+  .edu-item .edu-org { font-weight: 600; }
+  .edu-item .edu-degree { color: var(--muted); font-size: 14px; }
+
+  /* ── CERTIFICATES ── */
+  .certs ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #333;
+  }
+  .certs ul li { margin-bottom: 5px; }
+
+  /* ── SKILLS ── */
+  .skills-group { margin-bottom: 18px; }
+  .skills-group-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 11px;
+    border-radius: 20px;
+  }
+
+  .tag.mid {
+    background: #f0f0ee;
+    color: #4a4a48;
+  }
+
+  .tag.basic {
+    background: #f5f5f3;
+    color: #888;
+  }
+
+  /* ── LANGUAGES ── */
+  .languages {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .lang-item .lang-name { font-weight: 600; }
+  .lang-item .lang-level { color: var(--muted); font-size: 13px; }
+
+  /* ── PUBLICATIONS ── */
+  .pub-item { font-size: 14px; color: #333; }
+
+  /* ── ABOUT ── */
+  .about p { font-size: 14px; line-height: 1.75; color: #333; margin-bottom: 12px; }
+  .about p:last-child { margin-bottom: 0; }
+
+  /* ── JOB STACK ── */
+  .job-stack {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--muted);
+    background: #f5f4f2;
+    border-left: 3px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .tg-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #229ED9;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.18s, transform 0.12s;
+  }
+
+  .tg-btn:hover { background: #1a8bbf; text-decoration: none; transform: translateY(-1px); }
+  .tg-btn:active { transform: scale(0.97); }
+
+  .tg-btn svg { flex-shrink: 0; }
+
+  /* ── NAV ── */
+  .header-nav {
+    display: flex;
+    gap: 4px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  .header-nav a {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  .header-nav a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ── DETAILS / SUMMARY ── */
+  details.section { margin-bottom: 40px; }
+
+  details.section > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 18px;
+    user-select: none;
+  }
+
+  details.section > summary::-webkit-details-marker { display: none; }
+
+  details.section > summary::after {
+    content: 'Развернуть';
+    font-size: 10px;
+    color: var(--accent);
+    margin-left: auto;
+    padding-left: 8px;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    text-transform: none;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  details.section[open] > summary::after {
+    content: 'Свернуть';
+  }
+
+  /* ── SCROLL TO TOP ── */
+  .back-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--muted);
+    font-size: 16px;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+    line-height: 1;
+  }
+
+  .back-to-top:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ── JOB FAVICON ── */
+  .job-company {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .job-favicon {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    object-fit: contain;
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+
+  /* ── KPI BADGES ── */
+  .kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .kpi-tag {
+    background: #eaf5ee;
+    color: #1e6b3a;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 11px;
+    border-radius: 20px;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .page { padding: 28px 20px 60px; }
+    .header { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+    .header-meta { justify-content: center; }
+    .header-nav { justify-content: center; }
     .avatar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      object-fit: cover;
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      display: block;
+      order: -1;
     }
-  </style>
+    .header-info h1 { font-size: 26px; }
+  }
+</style>
 </head>
 <body>
+<div class="page" id="top">
 
-<div class="header">
-  <img class="avatar" src="https://github.com/mklishin.png" alt="Profile Photo">
-  <h1>Михаил Клишин</h1>
-  <div>Product Manager B2C/B2B</div>
-  <div>
-    <a href="https://t.me/m_k11">https://t.me/m_k11</a>
-  </div>
-  <div class="small">Москва, RU или remote</div>
-</div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-info">
+      <h1>Михаил Клишин</h1>
+      <div class="title">Product Manager B2C / B2B</div>
+      <div class="header-meta">
+        <a href="https://t.me/m_k11">t.me/m_k11</a>
+        <span>Москва, RU / remote</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#certs" onclick="document.getElementById('certs').open=true">Сертификаты</a>
+        <a href="#about">О себе</a>
+      </nav>
+    </div>
+    <img class="avatar" src="https://github.com/mklishin.png" alt="Михаил Клишин">
+  </header>
 
-<div class="section">
-  <h2>Summary</h2>
-  <p>Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами и разработкой и запуске новых продуктов. Умею как discovery, так и delivery</p>
-</div>
+  <!-- PROFILES -->
+  <section class="section">
+    <h2>Профили</h2>
+    <div class="profiles">
+      <a href="https://www.linkedin.com/in/mklishin/">LinkedIn</a>
+      <a href="https://career.habr.com/username2">Habr Career</a>
+      <a href="https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634">HeadHunter.ru</a>
+      <a href="https://t.me/m_k11">Telegram</a>
+    </div>
+  </section>
 
-<div class="section">
-  <h2>Profiles</h2>
-  <div>LinkedIn — <a href="https://www.linkedin.com/in/mklishin/">www.linkedin.com/in/mklishin/</a></div>
-  <div>Habr Career — <a href="https://career.habr.com/username2">https://career.habr.com/username2</a></div>
-  <div>HeadHunter.ru — <a href="https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634">https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634</a></div>
-  <div>Telegram — <a href="https://t.me/m_k11">https://t.me/m_k11</a></div>
-</div>
+  <!-- SUMMARY -->
+  <section class="section summary">
+    <h2>Summary</h2>
+    <p>Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик (CTR, Retention, Revenue, MAU), управлении кросс-функциональными командами и разработке новых продуктов. Умею как discovery, так и delivery.</p>
+    <div class="kpi-row">
+      <span class="kpi-tag">↑ Revenue</span>
+      <span class="kpi-tag">↑ CTR</span>
+      <span class="kpi-tag">500k+ MAU</span>
+      <span class="kpi-tag">↑ NPS</span>
+      <span class="kpi-tag">B2C / B2B fintech</span>
+    </div>
+  </section>
 
-<div class="section">
-  <h2>Work Experience</h2>
+  <!-- WORK EXPERIENCE -->
+  <section class="section" id="experience">
+    <h2>Опыт работы</h2>
 
-  <div class="item">
-    <strong>Альфа-Банк</strong> — Руководитель цифровых продуктов B2C (кредитные карты)<br>
-    <span class="small">2025-08 — 2026-01</span>
-    <p>Развитие сайта alfabank.ru и клиентского пути онлайн-заказа кредитных карт.</p>
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://alfabank.ru/favicon.ico" alt="">Альфа-Банк
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Руководитель цифровых продуктов B2C (кредитные карты)</div>
+            <span class="job-dates">2025-08 — 2026-01</span>
+          </div>
+          <ul>
+            <li>Развитие сайта alfabank.ru и клиентского пути (CJM) онлайн-заказа кредитных карт, транзакционных продуктов, первичных продаж; разработка витрины офферов</li>
+            <li>Рост CTR 16% → 24%; повышение take rate; ответственность за CAC (в т.ч. партнёрские каналы и CPA); разработка и запуск рекламных предложений для новых клиентов, доработка UI сайта</li>
+            <li>Запуск новых карточных продуктов с онлайн-заказами, доработка бизнес-логики выдачи продукта</li>
+            <li>Интеграция и доработка систем риск-менеджмента, скоринга, внутрибанковских систем OCRM, Scylla; интеграции с identity-провайдерами Alfa-ID, СМЭВ ЕСИА</li>
+            <li>Ежедневный мониторинг аналитики; создание воркбуков и дашбордов в Superset, Яндекс.Метрика, Альфа-Аналитика</li>
+            <li>Разработка нового виджета онлайн-заявки на продукты</li>
+            <li>Проведение A/B-тестов; доработка общебанковской CRM-системы под нужды клиентского пути транзакционных продуктов</li>
+            <li>Внедрение ИИ / GenAI в рабочие процессы для сокращения time to market</li>
+            <li>400+ страниц в проде, MAU ~500 000; доработан техпроцесс релиза, добавлено IDOR-тестирование как обязательный этап пайплайна; запущены новые CPA-кампании</li>
+            <li>Команда: FE, BE, QA, PM, маркетолог, UX/UI дизайнер</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">EdTech, государственная организация</span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Technical Product Owner B2C/B2G</div>
+            <span class="job-dates">2024-07 — 2025-08</span>
+          </div>
+          <div class="job-desc">Реализация государственных федеральных просветительских и образовательных проектов B2C и B2G.</div>
+          <ul>
+            <li>Лидил разработку грантовой платформы с matching и ranking системой — с 0 до MVP за 4 месяца</li>
+            <li>Управлял двумя командами разработки (BE, FE, DevOps), деливерил бэклог продуктовых менеджеров</li>
+            <li>Улучшил функциональность и юзабилити 10+ самописных сайтов и лендингов на Tilda и 2 mobile-приложений (iOS, Android, Flutter, Dart); вёл базу знаний и документацию</li>
+            <li>Отвечал за развитие внутренних продуктов: CMS, CRM, ERP, core платформа. MAU 650 000+</li>
+            <li>144 977 мероприятий / лекций / уроков в Q1–Q2 2025; Reach контентного направления — 5 000 000 зрителей</li>
+            <li>Формировал бэклог и доставлял фичи; работал с UX/UI дизайнером, готовил мокапы и макеты</li>
+            <li>Формировал требования на основе данных и исследований: PRD, ТЗ, ФТ и БТ, бизнес-логику</li>
+            <li>Совместно с tech lead разрабатывал архитектуру проекта и переход от монолита к микросервисам</li>
+            <li>Управлял стейкхолдерами; проводил A/B тесты и исследования клиентского пути, CJM</li>
+            <li>Разработал стратегию и дорожные карты, сформировал KPI</li>
+            <li>Обеспечил покрытие продуктов аналитикой и мониторингом: Datalens, Kibana, Logstash (ELK), Grafana, Jitsu — 10 000+ событий, 3000 RPS</li>
+            <li>Подготовил требования и PRD для интеграции с ГИС «Электронный бюджет» (проведение конкурса, распределение грантов)</li>
+            <li>Интеграция с 1С ЭДО и ЕСИА OAuth 2.0 (VK ID, VK API, Yandex ID); внедрение Keycloak и новой RBAC-модели</li>
+            <li>Обеспечил комплаенс по ПДн и ИБ (152-ФЗ, 187-ФЗ)</li>
+            <li>Запустил новые продукты, управлял кросс-функциональной командой (аналитики, frontend, backend, QA, UX/UI, контент); проводил дейли, груминги, ретро, демо и другие ритуалы; сформировал agile release train</li>
+            <li>В 2024 в направлении GR/B2G — более 2 000 000 пользователей</li>
+          </ul>
+          <div class="job-stack">Стек: Python + Django, Flask, Jinja, JavaScript (Vue, Node, Next), Apollo, TanStack, Sentry, RabbitMQ, PostgreSQL + GraphQL, Elasticsearch, Redis + Celery, Kubernetes, S3, k8s, Yandex Cloud, GitLab (секреты → Yandex Lockbox)</div>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://ru.wikipedia.org/wiki/Special:FilePath/Logo_1xBet.png" alt="">1X Bet
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Product Manager Content B2C</div>
+            <span class="job-dates">2023-11 — 2024-07</span>
+          </div>
+          <div class="job-desc">Развитие контентного направления в iGaming (MENA, CIS, India).</div>
+          <ul>
+            <li>Разработал контентную стратегию для новых регионов</li>
+            <li>Управлял метриками GGR, LTV, ARPU, Retention</li>
+            <li>Запустил продукт в Сомали (+~50 000 MAU)</li>
+            <li>Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://www.avito.st/dstatic/favicon.ico" alt="">Авито
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Product Monetization Manager B2C/B2B (Вертикаль Авто)</div>
+            <span class="job-dates">2022-06 — 2024-02</span>
+          </div>
+          <div class="job-desc">Стратегическое управление монетизацией SMB вертикали Авто.</div>
+          <ul>
+            <li>Вырастил выручку на 25% YoY (1.5M$/мес)</li>
+            <li>Увеличил долю продукта в структуре выручки 23% → 31%</li>
+            <li>Управлял 150 000+ клиентами, поднял retention до 90+%</li>
+            <li>Внедрил автоматические CRM-коммуникации и user flows</li>
+            <li>Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход</li>
+            <li>Контролировал проведение A/B тестов (средний объём групп от 30 000, минимум 6 тестов в квартал), выступал заказчиком дизайна тестов, обеспечивал верификацию результатов группой бизнес-анализа, проводил UAT</li>
+            <li>Работал с аналитикой: mySQL, DBeaver, Vertica, витрины, M42, Trisigma, Tableau, Redash</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://static.vk.ru/vkid/1.1.1328/favicon-new.svg" alt="">VK
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Business Development Manager (VK Образование)</div>
+            <span class="job-dates">2022-01 — 2022-06</span>
+          </div>
+          <ul>
+            <li>Развитие EdTech и HRTech направления</li>
+            <li>Выиграл тендер Минпросвещения на проведение Всероссийской олимпиады по программированию для школьников и студентов</li>
+            <li>Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://upload.wikimedia.org/wikipedia/commons/4/45/BestDoctor_Logo.jpg" alt="">BestDoctor
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Senior Business Development Manager (MedTech/InsurTech)</div>
+            <span class="job-dates">2021-06 — 2022-01</span>
+          </div>
+          <ul>
+            <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
+            <li>Запускал новый продукт дистанционной психологической помощи (от идеи до proof of concept и первой продажи)</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://potok.io/favicon.ico" alt="">TalentTech
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Business Development Manager HRTech</div>
+            <span class="job-dates">2020-05 — 2021-08</span>
+          </div>
+          <ul>
+            <li>Продажи B2B IT-продуктов в сфере HRTech: ATS, HCM, LXP — коробочные продукты, консалтинг, интеграция (REST, SOAP, ADFS, EWS); SaaS, PaaS, on-premise; 152-ФЗ, №25 ФСТЭК</li>
+            <li>Solution selling, методология PPVVC; оценка рынка SAM/TAM/SOM</li>
+            <li>Совершил первые экспортные сделки в Казахстан</li>
+            <li>Участие в работе продуктовой команды: сбор пожеланий клиентов, интервью и custdev, оценка требований по RICE, подготовка wireframe для UX/UI дизайнеров, работа с прототипами интерфейса</li>
+            <li>Настройка workflow, создание сущностей для баз данных и скриптов автоматизированных действий; проверка запросов в Postman (REST/SOAP API)</li>
+            <li>A/B тестирование функционала в stage-среде совместно с менеджерами клиента</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="job">
+      <details open>
+        <summary>
+          <span class="job-company">
+            <img class="job-favicon" src="https://makeloveagency.com/favicon.ico" alt="">makelove
+          </span>
+        </summary>
+        <div class="job-content">
+          <div class="job-header">
+            <div class="job-title">Senior Sales Manager</div>
+            <span class="job-dates">2017-11 — 2020-05</span>
+          </div>
+          <ul>
+            <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2>Образование</h2>
+    <div class="edu-item">
+      <div class="edu-org">Российский Государственный Гуманитарный Университет (РГГУ)</div>
+      <div class="edu-degree">Управление, Реклама и PR — Высшее образование, 2018</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2>Навыки</h2>
+    <div class="skills-group">
+      <div class="skills-group-label">Продвинутый уровень</div>
+      <div class="tags">
+        <span class="tag">Product Management</span>
+        <span class="tag">Business Development</span>
+        <span class="tag">Project Management</span>
+        <span class="tag">Strategic Management</span>
+        <span class="tag">SaaS</span>
+        <span class="tag">Launching New Products</span>
+        <span class="tag">People Management</span>
+        <span class="tag">Atlassian Jira</span>
+        <span class="tag">BI Systems</span>
+        <span class="tag">CRM</span>
+        <span class="tag">Business Analysis</span>
+        <span class="tag">A/B Testing</span>
+        <span class="tag">CustDev</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skills-group-label">Средний уровень</div>
+      <div class="tags">
+        <span class="tag mid">Marketing Analysis</span>
+        <span class="tag mid">Data Analysis</span>
+        <span class="tag mid">System Analysis</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skills-group-label">Базовый уровень</div>
+      <div class="tags">
+        <span class="tag basic">SQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES (collapsible) -->
+  <details class="section certs" id="certs">
+    <summary>Сертификаты и курсы</summary>
     <ul>
-      <li>Повысил CTR с 16% до 24%, ответственен за CAC и CPA в партнерских каналах</li>
-      <li>Запустил новые карточные продукты с онлайн-оформлением</li>
-      <li>Разработал и запустил рекламные предложения, витрину офферов и улучшил UI</li>
-      <li>Провел интеграции со скорингом, OCRM, Alfa-ID, СМЭВ ЕСИА</li>
-      <li>Ежедневный мониторинг аналитики в Superset, Яндекс.Метрика, Альфа-Аналитика</li>
-      <li>400+ страниц в проде, MAU ~500 000</li>
+      <li>Project Management Professional by Google — 2024</li>
+      <li>Jira Fundamentals by Atlassian — 2024</li>
+      <li>Product Analytics by DevToDev — 2024</li>
+      <li><a href="https://legacy.edvice.pro/education/online-course/certificate/h5Ia0b5kslW6paawOG3w9w/">Product Analytics: User Interaction &amp; Forecasting</a> — Product.Vision — 2024</li>
+      <li><a href="https://gopractice.io/sat/cert/1021467">Product Growth Skills Test</a> — GoPractice — 2024</li>
+      <li>People Management, программа развития менеджеров Авито — 2024</li>
+      <li>Strategic and Innovation Management by Copenhagen Business School — 2023</li>
+      <li>Академия продуктовых менеджеров by VK — 2022</li>
+      <li>CustDev — Product.Vision — 2022</li>
+      <li>Product Management Basics — ProductSense — 2020</li>
+      <li>ИЗЮМ — школа для HR; Employer brand management, digital в HR — makelove school — 2019</li>
+      <li>HR BP — стратегическое партнерство и управление персоналом — TalentTech и Нетология — 2019</li>
+      <li>Школа рекламных технологий; Школа аналитики — Академия Яндекса — 2017</li>
     </ul>
-  </div>
+  </details>
 
-  <div class="item">
-    <strong>EdTech, государственная организация</strong> — Technical Product Owner B2C/B2G<br>
-    <span class="small">2024-07 — 2025-08</span>
-    <p>Лидил разработку грантовой платформы и развитие внутренних продуктов.</p>
-    <ul>
-      <li>Запустил грантовую платформу с 0 до MVP за 4 месяца</li>
-      <li>Управлял двумя командами разработки BE, FE и DevOps</li>
-      <li>MAU 650 000+, Reach контентного направления — 5 млн зрителей</li>
-      <li>Провел интеграцию с ГИС «Электронный бюджет», 1С ЭДО, ЕСИА, Keycloak</li>
-      <li>Построил аналитику (Datalens, Grafana, ELK, 100 000+ событий)</li>
-      <li>Перевод монолита в микросервисы, формирование PRD, дорожных карт и KPI</li>
-    </ul>
-  </div>
+  <!-- LANGUAGES -->
+  <section class="section">
+    <h2>Языки</h2>
+    <div class="languages">
+      <div class="lang-item">
+        <div class="lang-name">Русский</div>
+        <div class="lang-level">Native</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Английский</div>
+        <div class="lang-level">C2</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Сербский</div>
+        <div class="lang-level">B1</div>
+      </div>
+    </div>
+  </section>
 
-  <div class="item">
-    <strong>1X Bet</strong> — Product Manager Content B2C<br>
-    <span class="small">2023-11 — 2024-07</span>
-    <p>Развитие контентного направления в iGaming (MENA, CIS, India).</p>
-    <ul>
-      <li>Разработал контентную стратегию для новых регионов</li>
-      <li>Управлял метриками GGR, LTV, ARPU, Retention</li>
-      <li>Запустил продукт в Сомали (+~50 000 MAU)</li>
-      <li>Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD</li>
-    </ul>
-  </div>
+  <!-- PUBLICATIONS -->
+  <section class="section">
+    <h2>Публикации</h2>
+    <div class="pub-item">VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">wbcmedia.ru</a> | <a href="https://hrkitchen.ru/talenttech">Авторский курс от TalentTech по теме «Цифровая трансформация HR»</a></div>
+  </section>
 
-  <div class="item">
-    <strong>Авито</strong> — Product Monetization Manager B2C/B2B (Вертикаль Авто)<br>
-    <span class="small">2022-06 — 2024-02</span>
-    <p>Стратегическое управление монетизацией SMB вертикали Авто.</p>
-    <ul>
-      <li>Вырастил выручку на 25% YoY (1.5M$/мес)</li>
-      <li>Увеличил долю продукта в структуре выручки 23% -> 31%</li>
-      <li>Управлял 150 000+ клиентами, поднял retention до 90+%</li>
-      <li>Внедрил автоматические CRM-коммуникации и user flows</li>
-      <li>Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход</li>
-    </ul>
-  </div>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <h2>О себе</h2>
+    <p>Приношу бизнесу деньги, ращу метрики.</p>
+    <p>Умею дискаверить, умею деливерить (CI/CD процессы, blue green, канарейки), работаю в HADI циклах, полный Double Diamond, использую Lean, JTBD, RICE, WSJF и другие фреймворки. Аргументирую на цифрах, мыслю стратегически, умею работать руками, менеджерить проекты и команды.</p>
+    <p>Опыт с веб, фронт и бэк, с интеграциями и платформами. Понимаю SOLID и CRUD, отличаю int от float, а OLTP от OLAP, и со шпаргалкой назову различия в версиях uuid. Работаю в гибких методологиях. Кодить не умею, но могу написать несложную кверю и вызвать хранимку, а с мануалом — прокатить плейбук.</p>
+    <p>Разбираюсь в REST/SOAP API, понимаю идемпотентность и state/stateless. Несколько месяцев работал в Тинькофф в небанковских ML продуктах и на контракте в сети сервисных центров (retail, 600+ точек).</p>
+    <p>Участвовал в хакатонах Сколково (mini-apps) и Авито (LLM). Вёл практикум на курсе ВШКУ РАНХиГС по теме «Автоматизация HR».</p>
+  </section>
 
-  <div class="item">
-    <strong>VK</strong> — Business Development Manager (VK Образование)<br>
-    <span class="small">2022-01 — 2022-06</span>
-    <ul>
-      <li>Развитие EdTech и HRTech направления</li>
-      <li>Выиграл тендер Минпросвещения на проведение Всероссииской олимпиады по программированию для школьников и студентов</li>
-      <li>Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <strong>BestDoctor</strong> — Senior Business Development Manager (MedTech/InsurTech)<br>
-    <span class="small">2021-06 — 2022-01</span>
-    <ul>
-      <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
-      <li>Запускал новый продукт дистанционной психологической помощи (от идеи до proof of concept и первой продажи)</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <strong>TalentTech</strong> — Business Development Manager HRTech<br>
-    <span class="small">2020-05 — 2021-08</span>
-    <ul>
-      <li>Продажи ATS, HCM, LXP решений</li>
-      <li>Совершил первые экспортные сделки в Казахстан</li>
-      <li>Участвовал в custdev и подготовке требований для продуктовой команды</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <strong>makelove</strong> — Senior Sales Manager<br>
-    <span class="small">2017-11 — 2020-05</span>
-    <ul>
-      <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
-    </ul>
-  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-text">Открыт к новым возможностям — напишите мне напрямую</div>
+    <a class="tg-btn" href="https://t.me/m_k11" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/>
+      </svg>
+      Написать в Telegram
+    </a>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+  </footer>
 
 </div>
-
-<div class="section">
-  <h2>Education</h2>
-  <div>Российский Государственный Гуманитарный Университет (РГГУ) — Управление, Реклама и PR (Высшее образование, 2018)</div>
-</div>
-
-<div class="section">
-  <h2>Certificates</h2>
-  <ul>
-    <li>Project Management Professional by Google — 2024</li>
-    <li>Jira Fundamentals by Atlassian — 2024</li>
-    <li>Product Analytics by DevToDev — 2024</li>
-    <li>Product Growth Skills Test by GoPractice — 2024</li>
-	<li>People Management, программа развития менеджеров Авито — 2024</li>
-	<li>Strategic and Innovation Management by Copenhagen Business School — 2023</li>
-	<li>Академия продуктовых менеджеров by VK — 2022</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Skills</h2>
-  <div><strong>Продвинутый уровень</strong></div>
-  <ul>
-    <li>Product Management</li>
-    <li>Business Development</li>
-    <li>Project Management</li>
-    <li>Strategic Management</li>
-    <li>SaaS</li>
-    <li>Launching new products</li>
-    <li>People Management</li>
-    <li>Atlassian Jira</li>
-    <li>Business Intelligence Systems (BI)</li>
-    <li>CRM</li>
-    <li>Business Analysis</li>
-    <li>A/B</li>
-    <li>CustDev</li>
-  </ul>
-
-  <div><strong>Средний уровень</strong></div>
-  <ul>
-    <li>Marketing Analysis</li>
-    <li>Data Analysis</li>
-	<li>System Analysis</li></li>
-  </ul>
-
-  <div><strong>Базовый уровень</strong></div>
-  <ul>
-    <li>SQL</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Languages</h2>
-  <ul>
-    <li>Русский — Native</li>
-    <li>Английский — C2</li>
-    <li>Сербский — B1</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Publications</h2>
-  <div>VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/</a></div>
-</div>
-
-<div class="section">
-  <h2>About Me</h2>
-  <p>Приношу бизнесу деньги, ращу метрики.</p>
-
-  <p>Умею дискаверить, умею деливерить (CI/CD процессы, blue green, канарейки), работаю в HADI циклах, полный Double Diamond, использую Lean, JTBD, RICE, WSJF и другие фреймворки. Аргументирую на цифрах, мыслю стратегически, умею работать руками, менеджерить проекты и команды.</p>
-
-  <p>Опыт с веб, фронт и бэк, с интеграциями и платформами. Понимаю SOLID и CRUD, отличаю int от float, а OLTP от OLAP, и со шпаргалкой назову различия в версиях uuid. Pаботаю в гибких методологиях. Кодить не умею, но могу написать несложную кверю и вызвать хранимку, а с мануалом – прокатить плэйбук.</p>
-
-  <p>Разбираюсь в REST/SOAP API, понимаю идемпотентность и state/stateless. Понимаю, что ивенты это действия, а не результат, и как через конкатенацию или debounce сэкономить деньги; различаю кластерный и некластерный индексы, и что в раннер не пойдут коммиты no_ci или без джобы, и что FF блочит service workers в режиме инкогнито. Умею и change и run.</p>
-
-  <p>Несколько месяцев работал в Тинькофф в небанковских ML продуктах и на контракте в сети сервисных центров (retail, 600+ точек).</p>
-
-  <p>Участвовал в хакатонах Сколково (mini-apps) и Авито (LLM). Вёл практикум на курсе ВШКУ РАНХиГС по теме "Автоматизация HR".</p>
-</div>
-
 </body>
 </html>
-```
