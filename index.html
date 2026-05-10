@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Михаил Клишин — резюме Product Manager B2C, B2B | ex Avito, VK</title>
+<title id="page-title">Михаил Клишин — Product Manager B2C, B2B | ex Avito, VK</title>
 <meta name="yandex-verification" content="519153342e3e0c27" />
 <meta name="format-detection" content="telephone=no">
-<meta name="description" content="Product Manager и Technical Product Owner. ex-Avito, VK, Альфа-Банк. Развитие и запуск EdTech, Fintech, Ecom продуктов. B2C, B2B, B2G.">
+<meta id="page-desc" name="description" content="Product Manager и Technical Product Owner с 5+ летним опытом. ex Avito, VK, Альфа-Банк. B2C, B2B, B2G.">
 <link rel="icon" type="image/png" href="https://github.com/mklishin.png">
-<!-- Метрика счетчик -->
+<link rel="canonical" href="https://mklishin.github.io/">
+<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function(m,e,t,r,i,k,a){
   m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -19,10 +20,14 @@
 ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/109079169" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
-<!-- /Метрика счетчик -->
+<!-- /Yandex.Metrika counter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+  /* ── LANGUAGE TOGGLE ── */
+  html[lang="ru"] .en { display: none !important; }
+  html[lang="en"] .ru { display: none !important; }
+
   :root {
     --text: #1a1a1a;
     --muted: #6b6b6b;
@@ -37,6 +42,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -53,6 +60,44 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     max-width: 860px;
     margin: 0 auto;
     padding: 48px 40px 80px;
+  }
+
+  /* ── LANG SWITCHER BUTTON ── */
+  .lang-switcher {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 100;
+    font-family: 'DM Sans', sans-serif;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    pointer-events: auto;
+  }
+
+  .lang-switcher.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .lang-switcher button {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .lang-switcher button:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
   }
 
   /* ── HEADER ── */
@@ -165,9 +210,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
   }
 
   /* ── WORK EXPERIENCE ── */
-  .job {
-    margin-bottom: 28px;
-  }
+  .job { margin-bottom: 28px; }
 
   .job details {
     border: 1px solid var(--border);
@@ -207,9 +250,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     transform: rotate(180deg);
   }
 
-  .job-content {
-    padding: 0 20px 20px;
-  }
+  .job-content { padding: 0 20px 20px; }
 
   .job-header {
     display: flex;
@@ -271,11 +312,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     margin-bottom: 8px;
   }
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
   .tag {
     background: var(--tag-bg);
@@ -286,15 +323,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     border-radius: 20px;
   }
 
-  .tag.mid {
-    background: #f0f0ee;
-    color: #4a4a48;
-  }
-
-  .tag.basic {
-    background: #f5f5f3;
-    color: #888;
-  }
+  .tag.mid { background: #f0f0ee; color: #4a4a48; }
+  .tag.basic { background: #f5f5f3; color: #888; }
 
   /* ── LANGUAGES ── */
   .languages {
@@ -338,10 +368,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     text-align: center;
   }
 
-  .footer-text {
-    font-size: 14px;
-    color: var(--muted);
-  }
+  .footer-text { font-size: 14px; color: var(--muted); }
 
   .tg-btn {
     display: inline-flex;
@@ -387,7 +414,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     text-decoration: none;
   }
 
-  /* ── DETAILS / SUMMARY (section certs) ── */
+  /* ── DETAILS / SUMMARY (certs section) ── */
   details.section { margin-bottom: 40px; }
 
   details.section > summary {
@@ -409,28 +436,24 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     transition: color 0.15s;
   }
 
-  details.section > summary:hover {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
-
+  details.section > summary:hover { color: var(--accent); border-bottom-color: var(--accent); }
   details.section > summary::-webkit-details-marker { display: none; }
 
   details.section > summary::after {
-    content: 'Развернуть ▸';
-    font-size: 10px;
-    color: var(--accent);
     margin-left: auto;
     padding-left: 8px;
+    font-size: 10px;
+    color: var(--accent);
     letter-spacing: 0.05em;
     opacity: 0.8;
     text-transform: none;
     font-family: 'DM Sans', sans-serif;
   }
 
-  details.section[open] > summary::after {
-    content: 'Свернуть ▴';
-  }
+  html[lang="ru"] details.section > summary::after { content: 'Развернуть ▸'; }
+  html[lang="ru"] details.section[open] > summary::after { content: 'Свернуть ▴'; }
+  html[lang="en"] details.section > summary::after { content: 'Expand ▸'; }
+  html[lang="en"] details.section[open] > summary::after { content: 'Collapse ▴'; }
 
   /* ── SCROLL TO TOP ── */
   .back-to-top {
@@ -448,11 +471,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     line-height: 1;
   }
 
-  .back-to-top:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    text-decoration: none;
-  }
+  .back-to-top:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
   /* ── JOB FAVICON ── */
   .job-company {
@@ -464,6 +483,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     color: var(--text);
   }
 
+  .job-company h3 { font-size: inherit; font-weight: inherit; }
+
   .job-favicon {
     width: 18px;
     height: 18px;
@@ -473,12 +494,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
   }
 
   /* ── KPI BADGES ── */
-  .kpi-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 14px;
-  }
+  .kpi-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 
   .kpi-tag {
     background: #eaf5ee;
@@ -490,94 +506,196 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     letter-spacing: 0.01em;
   }
 
+  /* ── FOOTER UPDATED ── */
+  .footer-updated {
+    font-size: 11px;
+    color: #b0aca6;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── PRINT RUNNING HEADER (hidden on screen) ── */
+  .print-header { display: none; }
+
+  /* ── PRINT-ONLY TELEGRAM TEXT (hidden on screen) ── */
+  .print-tg { display: none; }
+
+  /* ── PDF BUTTON ── */
+  .nav-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    padding: 4px 10px;
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .nav-pdf-btn:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  /* ── PRINT / PDF ── */
+  @media print {
+    @page { margin: 18mm 20mm 14mm; }
+
+    /* running header — position:fixed repeats on every printed page */
+    .print-header {
+      display: flex !important;
+      position: fixed;
+      top: -12mm;
+      left: 0;
+      right: 0;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      font-size: 11px;
+      color: #666;
+      background: #fff;
+    }
+
+    .print-header-name {
+      font-weight: 600;
+      font-size: 12px;
+      color: #1a1a1a;
+    }
+
+    /* hide all interactive chrome */
+    .lang-switcher,
+    .header-nav,
+    .back-to-top,
+    .footer,
+    #sentinel-top,
+    #sentinel-bottom { display: none !important; }
+
+    body { background: #fff; font-size: 13px; }
+
+    .page { max-width: 100%; padding: 20px 28px; }
+
+    /* show company name in summary, hide only the chevron */
+    .job details > summary { display: flex !important; cursor: default; padding: 0 0 6px 0 !important; border: none !important; }
+    .job details > summary::after { display: none !important; }
+    details.section > summary { display: none !important; }
+
+    /* flatten job cards */
+    .job details {
+      border: none !important;
+      box-shadow: none !important;
+      border-bottom: 1px solid #e0ddd8 !important;
+      border-radius: 0 !important;
+    }
+
+    /* avoid page breaks inside a job card */
+    .job { page-break-inside: avoid; break-inside: avoid; }
+
+    a { color: inherit !important; text-decoration: none !important; }
+
+    .tg-btn, .tg-btn-sm { display: none !important; }
+    .print-tg { display: inline !important; font-size: 13px; color: #333; }
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 600px) {
     .page { padding: 28px 20px 60px; }
     .header { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
     .header-meta { justify-content: center; }
     .header-nav { justify-content: center; }
-    .avatar {
-      width: 80px;
-      height: 80px;
-      flex-shrink: 0;
-      display: block;
-      order: -1;
-    }
+    .avatar { width: 80px; height: 80px; flex-shrink: 0; display: block; order: -1; }
     .header-info h1 { font-size: 26px; }
+    .lang-switcher { top: 10px; right: 10px; }
   }
 </style>
-<link rel="canonical" href="https://mklishin.github.io/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Михаил Клишин",
+  "name": "Mikhail Klishin",
   "jobTitle": "Product Manager B2C / B2B",
-  "description": "Product Manager и Technical Product Owner с 5+ летним опытом. B2C, B2B, B2G.",
   "url": "https://mklishin.github.io/",
   "image": "https://github.com/mklishin.png",
   "sameAs": [
     "https://www.linkedin.com/in/mklishin/",
-    "https://career.habr.com/username2"
-  ],
-  "knowsAbout": [
-    "Product Management",
-    "Project Management",
-    "A/B Testing",
-    "Growth",
-    "Fintech",
-    "EdTech",
-    "HRTech",
-    "B2C",
-    "B2B",
-    "Analytics"
+    "https://career.habr.com/username2",
+    "https://t.me/m_k11"
   ]
 }
 </script>
 </head>
 <body>
+
+<!-- PRINT RUNNING HEADER (hidden on screen, repeats on every printed page) -->
+<div class="print-header">
+  <span class="print-header-name">Mikhail Klishin</span>
+  <span>Product Manager B2C / B2B &nbsp;·&nbsp; t.me/m_k11</span>
+</div>
+
+<!-- LANGUAGE SWITCHER -->
+<div class="lang-switcher hidden" id="lang-switcher">
+  <button id="lang-btn" onclick="toggleLang()">ENG</button>
+</div>
+
+<!-- sentinels for IntersectionObserver -->
+<div id="sentinel-top" style="position:absolute;top:0;height:1px;width:1px;pointer-events:none;"></div>
+
 <div class="page" id="top">
 
   <!-- HEADER -->
   <header class="header">
     <div class="header-info">
-      <h1>Михаил Клишин</h1>
+      <h1>
+        <span class="ru">Михаил Клишин</span>
+        <span class="en">Mikhail Klishin</span>
+      </h1>
       <div class="title">Product Manager B2C / B2B</div>
       <div class="header-meta">
-        <span>Москва, RU / remote</span>
-        <a class="tg-btn-sm" href="https://t.me/m_k11" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/></svg>
-          Telegram
-        </a>
+        <span class="ru">Москва, RU / remote</span>
+        <span class="en">Moscow, RU / remote</span>
       </div>
       <nav class="header-nav">
-        <a href="#experience">Опыт</a>
-        <a href="#skills">Навыки</a>
-        <a href="#certs" onclick="document.getElementById('certs').open=true">Сертификаты</a>
-        <a href="#about">О себе</a>
+        <a href="#experience" class="ru">Опыт</a>
+        <a href="#experience" class="en">Experience</a>
+        <a href="#skills" class="ru">Навыки</a>
+        <a href="#skills" class="en">Skills</a>
+        <a href="#certs" onclick="document.getElementById('certs').open=true" class="ru">Сертификаты</a>
+        <a href="#certs" onclick="document.getElementById('certs').open=true" class="en">Certificates</a>
+        <a href="#about" class="ru">О себе</a>
+        <a href="#about" class="en">About</a>
+        <button class="nav-pdf-btn" onclick="downloadPDF()">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="ru">PDF</span>
+          <span class="en">PDF</span>
+        </button>
       </nav>
     </div>
-    <img class="avatar" src="https://github.com/mklishin.png" alt="Михаил Клишин">
+    <img class="avatar" src="https://github.com/mklishin.png" alt="Mikhail Klishin">
   </header>
 
   <!-- PROFILES -->
   <section class="section">
-    <h2>Профили</h2>
+    <h2 class="ru">Профили</h2>
+    <h2 class="en">Profiles</h2>
     <div class="profiles">
       <a href="https://www.linkedin.com/in/mklishin/">LinkedIn</a>
       <a href="https://career.habr.com/username2">Habr Career</a>
       <a href="https://hh.ru/resume/c7679e74ff0cc84bde0039ed1f614470706634">HeadHunter.ru</a>
       <a class="tg-btn-sm" href="https://t.me/m_k11" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/></svg>
         Telegram
       </a>
+      <span class="print-tg">t.me/m_k11</span>
     </div>
   </section>
-
-  <!-- SUMMARY -->
   <section class="section summary">
     <h2>Summary</h2>
-    <p>T-shaped Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик, управлении кросс-функциональными командами и разработке новых продуктов. Умею как discovery, так и delivery.</p>
+    <p class="ru">T-shaped Product Manager и Technical Product Owner с более чем 5-летним опытом. Специализируюсь на запуске и развитии цифровых продуктов B2C и B2B. Сильные компетенции в управлении продуктами и проектами, построении CJM, росте ключевых метрик, управлении кросс-функциональными командами и разработке новых продуктов. Умею как discovery, так и delivery.</p>
+    <p class="en">T-shaped Product Manager and Technical Product Owner with 5+ years of experience. I specialise in launching and scaling digital products B2C and B2B. Strong competencies in product and project management, CJM design, growing key metrics, managing cross-functional teams, and building new products from scratch. Comfortable with both discovery and delivery.</p>
     <div class="kpi-row">
       <span class="kpi-tag">↑ Revenue</span>
       <span class="kpi-tag">↑ ARPPU</span>
@@ -592,21 +710,28 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
 
   <!-- WORK EXPERIENCE -->
   <section class="section" id="experience">
-    <h2>Опыт работы</h2>
+    <h2 class="ru">Опыт работы</h2>
+    <h2 class="en">Work Experience</h2>
 
+    <!-- Alfa-Bank -->
     <div class="job">
       <details open>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://alfabank.ru/favicon.ico" alt=""><h3>Альфа-Банк</h3>
+            <img class="job-favicon" src="https://alfabank.ru/favicon.ico" alt="">
+            <h3 class="ru">Альфа-Банк</h3>
+            <h3 class="en">Alfa-Bank</h3>
           </span>
         </summary>
         <div class="job-content">
           <div class="job-header">
-            <div class="job-title">Руководитель цифровых продуктов B2C (кредитные карты)</div>
-            <span class="job-dates">2025-08 — 2026-01</span>
+            <div class="job-title">
+              <span class="ru">Руководитель цифровых продуктов B2C (кредитные карты)</span>
+              <span class="en">B2C Digital Products Lead (Credit Cards)</span>
+            </div>
+            <span class="job-dates">08.2025 — 01.2026</span>
           </div>
-          <ul>
+          <ul class="ru">
             <li>Развитие сайта alfabank.ru и клиентского пути (CJM) онлайн-заказа кредитных карт, транзакционных продуктов, первичных продаж; разработка витрины офферов</li>
             <li>Рост CTR 16% → 24%; повышение take rate; ответственность за CAC (в т.ч. партнёрские каналы и CPA); разработка и запуск рекламных предложений для новых клиентов, доработка UI сайта</li>
             <li>Запуск новых карточных продуктов с онлайн-заказами, доработка бизнес-логики выдачи продукта</li>
@@ -618,22 +743,41 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             <li>400+ страниц в проде, MAU ~500 000; доработан техпроцесс релиза, добавлено IDOR-тестирование как обязательный этап пайплайна; запущены новые CPA-кампании</li>
             <li>Команда: FE, BE, QA, PM, маркетолог, UX/UI дизайнер</li>
           </ul>
+          <ul class="en">
+            <li>Growing alfabank.ru and the customer journey (CJM) for online credit card applications, transactional products, primary sales; developing the offers showcase</li>
+            <li>CTR growth 16% → 24%; improving take rate; accountability for CAC (including partner channels and CPA); designing and launching promotional offers for new customers, UI improvements</li>
+            <li>Launching new card products with online applications, refining product issuance business logic</li>
+            <li>Integration and improvement of risk management, scoring, internal systems OCRM, Scylla; integrations with identity providers Alfa-ID, SMEV ESIA</li>
+            <li>Daily analytics monitoring; building workbooks and dashboards in Superset, Yandex.Metrica, Alfa-Analytics</li>
+            <li>Developed a new online application widget</li>
+            <li>Running A/B tests; adapting the bank-wide CRM system to transactional product journey needs</li>
+            <li>Introducing AI / GenAI into workflows to reduce time to market</li>
+            <li>400+ pages in production, MAU ~500,000; improved release process, added IDOR testing as a mandatory pipeline stage; launched new CPA campaigns</li>
+            <li>Team: FE, BE, QA, PM, marketer, UX/UI designer</li>
+          </ul>
         </div>
       </details>
     </div>
 
+    <!-- EdTech -->
     <div class="job">
       <details open>
         <summary>
-          <span class="job-company"><h3>EdTech, государственная организация</h3></span>
+          <span class="job-company">
+            <h3 class="ru">EdTech, государственная организация</h3>
+            <h3 class="en">EdTech, Government Organisation</h3>
+          </span>
         </summary>
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Technical Product Owner B2C/B2G</div>
-            <span class="job-dates">2024-07 — 2025-08</span>
+            <span class="job-dates">07.2024 — 08.2025</span>
           </div>
-          <div class="job-desc">Реализация государственных федеральных просветительских и образовательных проектов B2C и B2G.</div>
-          <ul>
+          <div class="job-desc">
+            <span class="ru">Реализация государственных федеральных просветительских и образовательных проектов B2C и B2G.</span>
+            <span class="en">Delivering federal government educational and outreach projects B2C and B2G.</span>
+          </div>
+          <ul class="ru">
             <li>Лидил разработку грантовой платформы с matching и ranking системой — с 0 до MVP за 4 месяца</li>
             <li>Управлял двумя командами разработки (BE, FE, DevOps), деливерил бэклог продуктовых менеджеров</li>
             <li>Улучшил функциональность и юзабилити 10+ самописных сайтов и лендингов на Tilda и 2 mobile-приложений (iOS, Android, Flutter, Dart); вёл базу знаний и документацию</li>
@@ -651,38 +795,74 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             <li>Запустил новые продукты, управлял кросс-функциональной командой (аналитики, frontend, backend, QA, UX/UI, контент); проводил дейли, груминги, ретро, демо и другие ритуалы; сформировал agile release train</li>
             <li>В 2024 в направлении GR/B2G — более 2 000 000 пользователей</li>
           </ul>
-          <div class="job-stack">Стек: Python + Django, Flask, Jinja, JavaScript (Vue, Node, Next), Apollo, TanStack, Sentry, RabbitMQ, PostgreSQL + GraphQL, Elasticsearch, Redis + Celery, Kubernetes, S3, k8s, Yandex Cloud, GitLab (секреты → Yandex Lockbox)</div>
+          <ul class="en">
+            <li>Led development of a grant platform with matching and ranking system — from 0 to MVP in 4 months</li>
+            <li>Managed two development teams (BE, FE, DevOps), delivered the product managers' backlog</li>
+            <li>Improved functionality and usability of 10+ custom websites/landing pages (Tilda) and 2 mobile apps (iOS, Android, Flutter, Dart); maintained knowledge base and documentation</li>
+            <li>Responsible for internal product development: CMS, CRM, ERP, core platform. MAU 650,000+</li>
+            <li>144,977 events / lectures / lessons in Q1–Q2 2025; content reach — 5,000,000 viewers</li>
+            <li>Built and delivered the feature backlog; worked with UX/UI designer, created mockups and wireframes</li>
+            <li>Gathered requirements from data and research: PRD, technical specs, functional and business requirements</li>
+            <li>Co-designed project architecture and monolith-to-microservices migration with the tech lead</li>
+            <li>Managed stakeholders; ran A/B tests and customer journey research, CJM</li>
+            <li>Developed strategy and roadmaps, defined KPIs</li>
+            <li>Ensured analytics and monitoring coverage: Datalens, Kibana, Logstash (ELK), Grafana, Jitsu — 10,000+ events, 3,000 RPS</li>
+            <li>Prepared requirements and PRD for integration with the "Electronic Budget" GIS (grant competition and distribution)</li>
+            <li>Integration with 1C EDO and ESIA OAuth 2.0 (VK ID, VK API, Yandex ID); implemented Keycloak and a new RBAC model</li>
+            <li>Ensured compliance with personal data and information security regulations (152-FZ, 187-FZ)</li>
+            <li>Launched new products, managed a cross-functional team (analysts, frontend, backend, QA, UX/UI, content); ran dailies, grooming, retros, demos; formed an agile release train</li>
+            <li>In 2024 in GR/B2G — over 2,000,000 users</li>
+          </ul>
+          <div class="job-stack">Stack: Python + Django, Flask, Jinja, JavaScript (Vue, Node, Next), Apollo, TanStack, Sentry, RabbitMQ, PostgreSQL + GraphQL, Elasticsearch, Redis + Celery, Kubernetes, S3, k8s, Yandex Cloud, GitLab → Yandex Lockbox</div>
         </div>
       </details>
     </div>
 
+    <!-- Avito -->
     <div class="job">
       <details open>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://www.avito.st/dstatic/favicon.ico" alt=""><h3>Авито</h3>
+            <img class="job-favicon" src="https://www.avito.st/dstatic/favicon.ico" alt="">
+            <h3 class="ru">Авито</h3>
+            <h3 class="en">Avito</h3>
           </span>
         </summary>
         <div class="job-content">
           <div class="job-header">
-            <div class="job-title">Product Monetization Manager B2C/B2B (Вертикаль Авто)</div>
-            <span class="job-dates">2022-06 — 2024-02</span>
+            <div class="job-title">
+              <span class="ru">Product Monetization Manager B2C/B2B (Вертикаль Авто)</span>
+              <span class="en">Product Monetization Manager B2C/B2B (Auto Vertical)</span>
+            </div>
+            <span class="job-dates">06.2022 — 02.2024</span>
           </div>
-          <div class="job-desc">Стратегическое управление монетизацией SMB вертикали Авто.</div>
-          <ul>
-            <li>Запуск новых тарифов и услуг продвижения</li>
+          <div class="job-desc">
+            <span class="ru">Стратегическое управление монетизацией SMB вертикали Авто.</span>
+            <span class="en">Strategic monetisation management for the SMB Auto vertical.</span>
+          </div>
+          <ul class="ru">
             <li>Вырастил выручку на 25% YoY (1.5M$/мес)</li>
             <li>Увеличил долю продукта в структуре выручки 23% → 31%</li>
             <li>Управлял 150 000+ клиентами, поднял retention до 90+%</li>
-            <li>Внедрил автоматические CRM-коммуникации, chat-bots и call-bots</li>
+            <li>Внедрил автоматические CRM-коммуникации и user flows</li>
             <li>Активно использовал JTBD, RICE, HADI, Amazon 6-pager подход</li>
             <li>Контролировал проведение A/B тестов (средний объём групп от 30 000, минимум 6 тестов в квартал), выступал заказчиком дизайна тестов, обеспечивал верификацию результатов группой бизнес-анализа, проводил UAT</li>
             <li>Работал с аналитикой: mySQL, DBeaver, Vertica, витрины, M42, Trisigma, Tableau, Redash</li>
+          </ul>
+          <ul class="en">
+            <li>Grew revenue by 25% YoY ($1.5M/month)</li>
+            <li>Increased product's share in revenue structure 23% → 31%</li>
+            <li>Managed 150,000+ clients, raised retention to 90+%</li>
+            <li>Implemented automated CRM communications and user flows</li>
+            <li>Actively applied JTBD, RICE, HADI, Amazon 6-pager approach</li>
+            <li>Managed A/B testing (average group size 30,000+, minimum 6 tests per quarter); acted as test design owner, ensured result verification by the business analysis team, conducted UAT</li>
+            <li>Worked with analytics: mySQL, DBeaver, Vertica, data marts, M42, Trisigma, Tableau, Redash</li>
           </ul>
         </div>
       </details>
     </div>
 
+    <!-- 1X Bet (collapsed by default) -->
     <div class="job">
       <details>
         <summary>
@@ -693,19 +873,29 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Product Manager Content B2C</div>
-            <span class="job-dates">2023-11 — 2024-07</span>
+            <span class="job-dates">11.2023 — 07.2024</span>
           </div>
-          <div class="job-desc">Развитие контентного направления в iGaming (MENA, CIS, India).</div>
-          <ul>
+          <div class="job-desc">
+            <span class="ru">Развитие контентного направления в iGaming (MENA, CIS, India).</span>
+            <span class="en">Growing the content vertical in iGaming (MENA, CIS, India).</span>
+          </div>
+          <ul class="ru">
             <li>Разработал контентную стратегию для новых регионов</li>
             <li>Управлял метриками GGR, LTV, ARPU, Retention</li>
             <li>Запустил продукт в Сомали (+~50 000 MAU)</li>
             <li>Улучшил UI web и mobile, работал с маркетингом по повышению Retention и FTD</li>
           </ul>
+          <ul class="en">
+            <li>Developed content strategy for new regions</li>
+            <li>Managed GGR, LTV, ARPU, Retention metrics</li>
+            <li>Launched product in Somalia (+~50,000 MAU)</li>
+            <li>Improved web and mobile UI; partnered with marketing to improve Retention and FTD</li>
+          </ul>
         </div>
       </details>
     </div>
 
+    <!-- VK (collapsed) -->
     <div class="job">
       <details>
         <summary>
@@ -715,18 +905,27 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         </summary>
         <div class="job-content">
           <div class="job-header">
-            <div class="job-title">Business Development Manager (VK Образование)</div>
-            <span class="job-dates">2022-01 — 2022-06</span>
+            <div class="job-title">
+              <span class="ru">Business Development Manager (VK Образование)</span>
+              <span class="en">Business Development Manager (VK Education)</span>
+            </div>
+            <span class="job-dates">01.2022 — 06.2022</span>
           </div>
-          <ul>
+          <ul class="ru">
             <li>Развитие EdTech и HRTech направления</li>
             <li>Выиграл тендер Минпросвещения на проведение Всероссийской олимпиады по программированию для школьников и студентов</li>
             <li>Заключил стратегические партнёрства со Сколково, ВТБ, Газпромнефть, Росатом</li>
+          </ul>
+          <ul class="en">
+            <li>Developed EdTech and HRTech direction</li>
+            <li>Won a Ministry of Education tender for a national programming olympiad for school and university students</li>
+            <li>Secured strategic partnerships with Skolkovo, VTB, Gazprom Neft, Rosatom</li>
           </ul>
         </div>
       </details>
     </div>
 
+    <!-- BestDoctor (collapsed) -->
     <div class="job">
       <details>
         <summary>
@@ -737,16 +936,21 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Senior Business Development Manager (MedTech/InsurTech)</div>
-            <span class="job-dates">2021-06 — 2022-01</span>
+            <span class="job-dates">06.2021 — 01.2022</span>
           </div>
-          <ul>
+          <ul class="ru">
             <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
             <li>Запускал новый продукт дистанционной психологической помощи (от идеи до proof of concept и первой продажи)</li>
+          </ul>
+          <ul class="en">
+            <li>Sales of corporate voluntary health insurance (VHI) and wellbeing products</li>
+            <li>Launched a new remote psychological support product (from idea to proof of concept and first sale)</li>
           </ul>
         </div>
       </details>
     </div>
 
+    <!-- TalentTech (collapsed) -->
     <div class="job">
       <details>
         <summary>
@@ -757,9 +961,9 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Business Development Manager HRTech</div>
-            <span class="job-dates">2020-05 — 2021-08</span>
+            <span class="job-dates">05.2020 — 08.2021</span>
           </div>
-          <ul>
+          <ul class="ru">
             <li>Продажи B2B IT-продуктов в сфере HRTech: ATS, HCM, LXP — коробочные продукты, консалтинг, интеграция (REST, SOAP, ADFS, EWS); SaaS, PaaS, on-premise; 152-ФЗ, №25 ФСТЭК</li>
             <li>Solution selling, методология PPVVC; оценка рынка SAM/TAM/SOM</li>
             <li>Совершил первые экспортные сделки в Казахстан</li>
@@ -767,10 +971,19 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             <li>Настройка workflow, создание сущностей для баз данных и скриптов автоматизированных действий; проверка запросов в Postman (REST/SOAP API)</li>
             <li>A/B тестирование функционала в stage-среде совместно с менеджерами клиента</li>
           </ul>
+          <ul class="en">
+            <li>B2B IT product sales in HRTech: ATS, HCM, LXP — boxed products, consulting, integration (REST, SOAP, ADFS, EWS); SaaS, PaaS, on-premise; 152-FZ, FSTEC #25</li>
+            <li>Solution selling, PPVVC methodology; SAM/TAM/SOM market sizing</li>
+            <li>Closed the first export deals in Kazakhstan</li>
+            <li>Contributed to the product team: gathering client feedback, interviews and custdev, RICE requirement scoring, preparing wireframes for UX/UI designers, working with interface prototypes</li>
+            <li>Workflow configuration, database entity and automation script creation; request testing in Postman (REST/SOAP API)</li>
+            <li>A/B testing of features in the stage environment alongside client managers</li>
+          </ul>
         </div>
       </details>
     </div>
 
+    <!-- makelove (collapsed) -->
     <div class="job">
       <details>
         <summary>
@@ -781,10 +994,13 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Senior Sales Manager</div>
-            <span class="job-dates">2017-11 — 2020-05</span>
+            <span class="job-dates">11.2017 — 05.2020</span>
           </div>
-          <ul>
+          <ul class="ru">
             <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
+          </ul>
+          <ul class="en">
+            <li>B2B sales of marketing solutions to large companies (Rostelecom, MegaFon, Danone, PepsiCo, etc.)</li>
           </ul>
         </div>
       </details>
@@ -793,16 +1009,18 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <h2>Навыки</h2>
+    <h2 class="ru">Навыки</h2>
+    <h2 class="en">Skills</h2>
     <div class="skills-group">
-      <div class="skills-group-label">Продвинутый уровень</div>
+      <div class="skills-group-label ru">Продвинутый уровень</div>
+      <div class="skills-group-label en">Advanced</div>
       <div class="tags">
         <span class="tag">Product Management</span>
         <span class="tag">Product Discovery (CustDev, JTBD)</span>
         <span class="tag">Project Management</span>
         <span class="tag">Product Delivery (Agile, backlog→release)</span>
-        <span class="tag">Data Analysis & Data-Driven Decision Making</span>
-        <span class="tag">Roadmapping & Prioritization</span>
+        <span class="tag">Data Analysis &amp; Data-Driven Decisions</span>
+        <span class="tag">Roadmapping &amp; Prioritization</span>
         <span class="tag">Atlassian Jira</span>
         <span class="tag">BI Systems</span>
         <span class="tag">CRM</span>
@@ -812,7 +1030,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       </div>
     </div>
     <div class="skills-group">
-      <div class="skills-group-label">Средний уровень</div>
+      <div class="skills-group-label ru">Средний уровень</div>
+      <div class="skills-group-label en">Intermediate</div>
       <div class="tags">
         <span class="tag mid">Marketing Analysis</span>
         <span class="tag mid">System Analysis</span>
@@ -821,7 +1040,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       </div>
     </div>
     <div class="skills-group">
-      <div class="skills-group-label">Базовый уровень</div>
+      <div class="skills-group-label ru">Базовый уровень</div>
+      <div class="skills-group-label en">Basic</div>
       <div class="tags">
         <span class="tag basic">SQL</span>
         <span class="tag basic">CI/CD</span>
@@ -831,38 +1051,60 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
 
   <!-- CERTIFICATES -->
   <details class="section certs" id="certs">
-    <summary>Сертификаты и курсы</summary>
+    <summary>
+      <span class="ru">Сертификаты и курсы</span>
+      <span class="en">Certificates &amp; Courses</span>
+    </summary>
     <ul>
       <li>Project Management Professional by Google — 2024</li>
       <li><a href="https://university.atlassian.com/student/award/VnZCjroNzAwgyVq6CJhhknTM">Jira Fundamentals by Atlassian</a> — 2024</li>
       <li>Product Analytics by DevToDev — 2024</li>
       <li><a href="https://legacy.edvice.pro/education/online-course/certificate/h5Ia0b5kslW6paawOG3w9w/">Product Analytics: User Interaction &amp; Forecasting</a> — Product.Vision — 2024</li>
       <li><a href="https://gopractice.io/sat/cert/1021467">Product Growth Skills Test</a> — GoPractice — 2024</li>
-      <li>People Management, программа развития менеджеров Авито — 2024</li>
-      <li><a href="https://coursera.org/share/7bea837179b9420707404b7f4dd184bd">Strategic Management and Innovation</a> by Copenhagen Business School — 2023</li>
-      <li>Академия продуктовых менеджеров by VK — 2022</li>
+      <li>
+        <span class="ru">People Management, программа развития менеджеров Авито — 2024</span>
+        <span class="en">People Management, Avito Managers Development Program — 2024</span>
+      </li>
+      <li>Strategic and Innovation Management — Copenhagen Business School — 2023</li>
+      <li>
+        <span class="ru">Академия продуктовых менеджеров by VK — 2022</span>
+        <span class="en">Product Managers Academy by VK — 2022</span>
+      </li>
       <li>CustDev — Product.Vision — 2022</li>
       <li>Product Management Basics — ProductSense — 2020</li>
-      <li>ИЗЮМ — школа для HR; Employer brand management, digital в HR — makelove school — 2019</li>
-      <li>HR BP — стратегическое партнерство и управление персоналом — TalentTech и Нетология — 2019</li>
-      <li>Школа рекламных технологий; Школа аналитики — Академия Яндекса — 2017</li>
+      <li>
+        <span class="ru">ИЗЮМ — школа для HR; Employer brand management, digital в HR — makelove school — 2019</span>
+        <span class="en">IZUM HR School; Employer Brand Management, Digital in HR — makelove school — 2019</span>
+      </li>
+      <li>
+        <span class="ru">HR BP — стратегическое партнерство и управление персоналом — TalentTech и Нетология — 2019</span>
+        <span class="en">HR Business Partner — Strategic Partnership &amp; People Management — TalentTech &amp; Netology — 2019</span>
+      </li>
+      <li>
+        <span class="ru">Школа рекламных технологий; Школа аналитики — Академия Яндекса — 2017</span>
+        <span class="en">School of Advertising Technologies; Analytics School — Yandex Academy — 2017</span>
+      </li>
     </ul>
   </details>
 
   <!-- LANGUAGES -->
   <section class="section">
-    <h2>Языки</h2>
+    <h2 class="ru">Языки</h2>
+    <h2 class="en">Languages</h2>
     <div class="languages">
       <div class="lang-item">
-        <div class="lang-name">Русский</div>
+        <div class="lang-name ru">Русский</div>
+        <div class="lang-name en">Russian</div>
         <div class="lang-level">Native</div>
       </div>
       <div class="lang-item">
-        <div class="lang-name">Английский</div>
+        <div class="lang-name ru">Английский</div>
+        <div class="lang-name en">English</div>
         <div class="lang-level">C2</div>
       </div>
       <div class="lang-item">
-        <div class="lang-name">Сербский</div>
+        <div class="lang-name ru">Сербский</div>
+        <div class="lang-name en">Serbian</div>
         <div class="lang-level">B1</div>
       </div>
     </div>
@@ -870,41 +1112,192 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
 
   <!-- EDUCATION -->
   <section class="section">
-    <h2>Образование</h2>
+    <h2 class="ru">Образование</h2>
+    <h2 class="en">Education</h2>
     <div class="edu-item">
-      <div class="edu-org">Российский Государственный Гуманитарный Университет (РГГУ)</div>
-      <div class="edu-degree">Управление, Реклама и PR — Высшее образование, 2018</div>
+      <div class="edu-org ru">Российский Государственный Гуманитарный Университет (РГГУ)</div>
+      <div class="edu-org en">Russian State University for the Humanities (RSUH)</div>
+      <div class="edu-degree ru">Управление, Реклама и PR — Высшее образование, 2018</div>
+      <div class="edu-degree en">Management, Advertising &amp; PR — Bachelor's degree, 2018</div>
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
   <section class="section">
-    <h2>Публикации</h2>
-    <div class="pub-item">VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">wbcmedia.ru</a> | <a href="https://hrkitchen.ru/talenttech">Авторский курс от TalentTech по теме «Цифровая трансформация HR»</a> | <a href="https://znanierussia.ru/speakers/87263">Лектор Общества «Знание»</a></div>
+    <h2 class="ru">Публикации</h2>
+    <h2 class="en">Publications</h2>
+    <div class="pub-item ru">VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">wbcmedia.ru</a> | <a href="https://hrkitchen.ru/talenttech">Авторский курс от TalentTech по теме «Цифровая трансформация HR»</a> | <a href="https://znanierussia.ru/speakers/87263">Лектор Общества «Знание»</a></div>
+    <div class="pub-item en">VKxSkolkovo StartUp Village Junior — 2022 — <a href="https://wbcmedia.ru/junior/mihail-klishin-yadro-nashej-auditorii-molodye-lyudi-do-30-let/">wbcmedia.ru</a> | <a href="https://hrkitchen.ru/talenttech">Authored course by TalentTech: "Digital HR Transformation"</a> | <a href="https://znanierussia.ru/speakers/87263">Speaker at the Russian Society "Znanie"</a></div>
   </section>
 
   <!-- ABOUT -->
   <section class="section about" id="about">
-    <h2>О себе</h2>
-    <p>Приношу бизнесу деньги, ращу метрики.</p>
-    <p>Умею дискаверить, умею деливерить (CI/CD процессы, blue green, канарейки), работаю в HADI циклах, полный Double Diamond, использую Lean, JTBD, RICE, WSJF и другие фреймворки. Аргументирую на цифрах, мыслю стратегически, умею работать руками, менеджерить проекты и команды.</p>
-    <p>Опыт с веб, фронт и бэк, с интеграциями и платформами. Понимаю SOLID и CRUD, отличаю int от float, а OLTP от OLAP, и со шпаргалкой назову различия в версиях uuid. Работаю в гибких методологиях. Кодить не умею, но могу написать несложную кверю и вызвать хранимку, а с мануалом — прокатить плейбук.</p>
-    <p>Разбираюсь в REST/SOAP API, понимаю идемпотентность и state/stateless. Несколько месяцев работал в Тинькофф в небанковских ML продуктах и на контракте в сети сервисных центров (retail, 600+ точек).</p>
-    <p>Участвовал в хакатонах Сколково (mini-apps) и Авито (LLM). Вёл практикум на курсе ВШКУ РАНХиГС по теме «Автоматизация HR».</p>
+    <h2 class="ru">О себе</h2>
+    <h2 class="en">About</h2>
+    <p class="ru">Приношу бизнесу деньги, ращу метрики.</p>
+    <p class="en">I deliver revenue and grow metrics.</p>
+    <p class="ru">Умею дискаверить, умею деливерить (CI/CD процессы, blue green, канарейки), работаю в HADI циклах, полный Double Diamond, использую Lean, JTBD, RICE, WSJF и другие фреймворки. Аргументирую на цифрах, мыслю стратегически, умею работать руками, менеджерить проекты и команды.</p>
+    <p class="en">I know how to discover and how to deliver (CI/CD pipelines, blue-green, canary releases), work in HADI cycles, full Double Diamond, applying Lean, JTBD, RICE, WSJF and other frameworks. I argue with data, think strategically, can roll up my sleeves, manage projects and teams.</p>
+    <p class="ru">Опыт с веб, фронт и бэк, с интеграциями и платформами. Понимаю SOLID и CRUD, отличаю int от float, а OLTP от OLAP, и со шпаргалкой назову различия в версиях uuid. Работаю в гибких методологиях. Кодить не умею, но могу написать несложную кверю и вызвать хранимку, а с мануалом — прокатить плейбук.</p>
+    <p class="en">Hands-on experience with web, frontend and backend, integrations and platforms. I understand SOLID and CRUD, can tell int from float and OLTP from OLAP, and with a cheatsheet can name the differences between UUID versions. I work in agile methodologies. I can't code, but I can write a simple query, call a stored procedure, and with a manual — run a playbook.</p>
+    <p class="ru">Разбираюсь в REST/SOAP API, понимаю идемпотентность и state/stateless. Несколько месяцев работал в Тинькофф в небанковских ML продуктах и на контракте в сети сервисных центров (retail, 600+ точек).</p>
+    <p class="en">Familiar with REST/SOAP APIs, understand idempotency and state/stateless design. Spent several months at Tinkoff working on non-banking ML products and on contract with a service centre chain (retail, 600+ locations).</p>
+    <p class="ru">Участвовал в хакатонах Сколково (mini-apps) и Авито (LLM). Вёл практикум на курсе ВШКУ РАНХиГС по теме «Автоматизация HR».</p>
+    <p class="en">Participated in Skolkovo (mini-apps) and Avito (LLM) hackathons. Led a workshop on the RANEPA Executive School course on "HR Automation".</p>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-text">Открыт к новым возможностям — напишите мне напрямую</div>
+    <div class="footer-text ru">Открыт к новым возможностям — напишите мне напрямую</div>
+    <div class="footer-text en">Open to new opportunities — reach out directly</div>
     <a class="tg-btn" href="https://t.me/m_k11" target="_blank" rel="noopener">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/>
-      </svg>
-      Написать в Telegram
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0ZM18.81 8.152l-2.023 9.531c-.148.66-.537.82-1.088.51l-3-2.21-1.448 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 14.04l-2.95-.924c-.641-.2-.654-.641.135-.948l11.514-4.44c.535-.19 1.003.13.921.424Z"/></svg>
+      <span class="ru">Написать в Telegram</span>
+      <span class="en">Write on Telegram</span>
     </a>
-    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <span class="print-tg">t.me/m_k11</span>
+    <div id="footer-updated" class="footer-updated"></div>
+    <a class="back-to-top" href="#top" aria-label="Top">↑</a>
   </footer>
 
+  <div id="sentinel-bottom" style="height:1px;width:1px;pointer-events:none;"></div>
+
 </div>
+
+<script>
+  const TITLES = {
+    ru: 'Михаил Клишин — Product Manager B2C, B2B | ex Avito, VK',
+    en: 'Mikhail Klishin — Product Manager B2C, B2B | ex Avito, VK'
+  };
+  const DESCS = {
+    ru: 'Product Manager и Technical Product Owner с 5+ летним опытом. ex Avito, VK, Альфа-Банк. B2C, B2B, B2G.',
+    en: 'Product Manager and Technical Product Owner with 5+ years of experience. ex Avito, VK, Alfa-Bank. B2C, B2B, B2G.'
+  };
+
+  // ── Fast smooth scroll for nav anchors ───────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.header-nav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        const start = window.scrollY;
+        const end = target.getBoundingClientRect().top + start - 12;
+        const duration = 320;
+        const startTime = performance.now();
+        const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+        (function step(now) {
+          const p = Math.min((now - startTime) / duration, 1);
+          window.scrollTo(0, start + (end - start) * ease(p));
+          if (p < 1) requestAnimationFrame(step);
+        })(startTime);
+      });
+    });
+  });
+
+  // ── PDF ──────────────────────────────────────────────
+  function downloadPDF() {
+    // Save current open/closed state of all <details>
+    const allDetails = document.querySelectorAll('details');
+    const wasOpen = Array.from(allDetails).map(d => d.open);
+
+    // Force everything open
+    allDetails.forEach(d => { d.open = true; });
+
+    // Small delay so the browser repaints before printing
+    setTimeout(() => {
+      window.print();
+      // Restore original state after dialog closes
+      // (afterprint fires when print dialog is dismissed)
+      const restore = () => {
+        allDetails.forEach((d, i) => { d.open = wasOpen[i]; });
+        window.removeEventListener('afterprint', restore);
+      };
+      window.addEventListener('afterprint', restore);
+    }, 80);
+  }
+
+  // ── Language ──────────────────────────────────────────
+  const _now = new Date();
+  const _monthsRu = ['январе','феврале','марте','апреле','мае','июне','июле','августе','сентябре','октябре','ноябре','декабре'];
+  const _monthsEn = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const _m = _now.getMonth(), _y = _now.getFullYear();
+  const UPDATED = {
+    ru: `обновлено ${_monthsRu[_m]} ${_y}`,
+    en: `updated ${_monthsEn[_m]} ${_y}`
+  };
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.getElementById('page-title').textContent = TITLES[lang];
+    document.getElementById('page-desc').content = DESCS[lang];
+    document.getElementById('lang-btn').textContent = lang === 'ru' ? 'ENG' : 'RUS';
+    const el = document.getElementById('footer-updated');
+    if (el) el.textContent = UPDATED[lang];
+    const url = new URL(location.href);
+    url.searchParams.set('lang', lang);
+    history.replaceState(null, '', url);
+  }
+
+  function toggleLang() {
+    const current = document.documentElement.lang;
+    setLang(current === 'ru' ? 'en' : 'ru');
+  }
+
+  // ── Visibility: show at top or bottom, fade after 2s otherwise ────
+  const switcher = document.getElementById('lang-switcher');
+  let fadeTimer = null;
+  let edgeVisible = false;
+
+  function showSwitcher() {
+    clearTimeout(fadeTimer);
+    switcher.classList.remove('hidden');
+  }
+
+  function scheduleFade() {
+    clearTimeout(fadeTimer);
+    if (!edgeVisible) {
+      fadeTimer = setTimeout(() => switcher.classList.add('hidden'), 2000);
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    const anyVisible = entries.some(e => e.isIntersecting);
+    // Recalculate: is *either* sentinel visible right now?
+    edgeVisible = anyVisible ||
+      document.getElementById('sentinel-top').getBoundingClientRect().top >= -10 ||
+      document.getElementById('sentinel-bottom').getBoundingClientRect().bottom <= window.innerHeight + 10;
+
+    if (edgeVisible) {
+      showSwitcher();
+    } else {
+      scheduleFade();
+    }
+  }, { threshold: 0 });
+
+  observer.observe(document.getElementById('sentinel-top'));
+  observer.observe(document.getElementById('sentinel-bottom'));
+
+  // Also run on scroll for smooth UX
+  document.addEventListener('scroll', () => {
+    const topRect = document.getElementById('sentinel-top').getBoundingClientRect();
+    const botRect = document.getElementById('sentinel-bottom').getBoundingClientRect();
+    edgeVisible = topRect.top >= -80 || botRect.bottom <= window.innerHeight + 80;
+    if (edgeVisible) {
+      showSwitcher();
+    } else {
+      scheduleFade();
+    }
+  }, { passive: true });
+
+  // ── Init ──────────────────────────────────────────────
+  (function() {
+    const params = new URLSearchParams(location.search);
+    const lang = params.get('lang') === 'en' ? 'en' : 'ru';
+    setLang(lang);
+    showSwitcher();
+  })();
+</script>
 </body>
 </html>
