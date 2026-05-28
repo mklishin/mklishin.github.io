@@ -940,7 +940,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Senior Business Development Manager (MedTech/InsurTech)</div>
-            <span class="job-dates">06.2021 — 01.2022</span>
+            <span class="job-dates">04.2021 — 01.2022</span>
           </div>
           <ul class="ru">
             <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
@@ -965,7 +965,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Business Development Manager HRTech</div>
-            <span class="job-dates">05.2020 — 08.2021</span>
+            <span class="job-dates">01.2020 — 04.2021</span>
           </div>
           <ul class="ru">
             <li>Продажи B2B IT-продуктов в сфере HRTech: ATS, HCM, LXP — коробочные продукты, консалтинг, интеграция (REST, SOAP, ADFS, EWS); SaaS, PaaS, on-premise; 152-ФЗ, №25 ФСТЭК</li>
@@ -998,7 +998,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Senior Sales Manager</div>
-            <span class="job-dates">11.2017 — 05.2020</span>
+            <span class="job-dates">08.2017 — 01.2020</span>
           </div>
           <ul class="ru">
             <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
@@ -1295,13 +1295,30 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     }
   }, { passive: true });
 
-  // ── Init ──────────────────────────────────────────────
-  (function() {
-    const params = new URLSearchParams(location.search);
-    const lang = params.get('lang') === 'en' ? 'en' : 'ru';
-    setLang(lang);
-    showSwitcher();
-  })();
+// ── Init ──────────────────────────────────────────────
+(function() {
+  const params = new URLSearchParams(location.search);
+  const urlLang = params.get('lang');
+
+  let lang;
+  if (urlLang === 'en' || urlLang === 'ru') {
+    // URL param wins over everything
+    lang = urlLang;
+  } else {
+    // No URL param — check localStorage, then browser language
+    const saved = (() => { try { return localStorage.getItem('cv_lang'); } catch(e) { return null; } })();
+    if (saved === 'en' || saved === 'ru') {
+      lang = saved;
+    } else {
+      // navigator.languages gives ordered list; fallback to navigator.language
+      const browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || 'ru';
+      lang = browserLang.toLowerCase().startsWith('ru') ? 'ru' : 'en';
+    }
+  }
+
+  setLang(lang);
+  showSwitcher();
+})();
 </script>
 </body>
 </html>
