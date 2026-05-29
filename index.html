@@ -10,7 +10,7 @@
 <meta property="og:image" content="https://github.com/mklishin.png">
 <meta property="og:image:width" content="350">
 <meta property="og:image:height" content="350">
-<meta id="page-desc" name="description" content="Product Manager и Technical Product Owner с 5-летним опытом. ex Avito, VK, Альфа-Банк. B2C, B2B, с опытом в Growth, Monetization, Full-Stack Delivery, mobile и web продукты.">
+<meta id="page-desc" name="description" content="Product Manager и Technical Product Owner с 5-летним опытом. ex-Avito, VK, Альфа-Банк. B2C, B2B, опыт в Growth, Monetization, Full-Stack Delivery, mobile и web продуктах.">
 <link rel="icon" type="image/png" href="https://github.com/mklishin.png">
 <link rel="canonical" href="https://mklishin.github.io/">
 <!-- Yandex.Metrika counter -->
@@ -291,6 +291,24 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
   }
 
   .job ul li { margin-bottom: 4px; line-height: 1.6; }
+
+  .job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 1px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .job-meta-tag { display: inline; }
+
+  .job-meta-tag + .job-meta-tag::before {
+    content: ' · ';
+    color: var(--border);
+  }
 
   /* ── EDUCATION ── */
   .edu-item { font-size: 15px; }
@@ -735,6 +753,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             </div>
             <span class="job-dates">08.2025 — 01.2026</span>
           </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Москва · Офис</span><span class="job-meta-tag en">Moscow · On-site</span>
+          </div>
           <ul class="ru">
             <li>Развитие сайта alfabank.ru и клиентского пути (CJM) онлайн-заказа кредитных карт, транзакционных продуктов, первичных продаж; разработка витрины офферов</li>
             <li>Рост CTR 16% → 24%; повышение take rate; ответственность за CAC (в т.ч. партнёрские каналы и CPA); разработка и запуск рекламных предложений для новых клиентов, доработка UI сайта</li>
@@ -776,6 +798,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
           <div class="job-header">
             <div class="job-title">Technical Product Owner B2C/B2G</div>
             <span class="job-dates">06.2024 — 08.2025</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Remote</span><span class="job-meta-tag en">Remote</span>
           </div>
           <div class="job-desc">
             <span class="ru">Реализация государственных федеральных просветительских и образовательных проектов B2C и B2G.</span>
@@ -827,7 +853,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       <details open>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://www.avito.st/dstatic/favicon.ico" alt="">
+            <img class="job-favicon" src="https://avito.ru/favicon.ico" alt="">
             <h3 class="ru">Авито</h3>
             <h3 class="en">Avito</h3>
           </span>
@@ -839,6 +865,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
               <span class="en">Product Monetization Manager B2C/B2B (Auto Vertical)</span>
             </div>
             <span class="job-dates">06.2022 — 02.2024</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Ереван, Армения · on-site</span><span class="job-meta-tag en">Yerevan, Armenia· on-site</span>
           </div>
           <div class="job-desc">
             <span class="ru">Стратегическое управление монетизацией SMB вертикали Авто.</span>
@@ -871,13 +901,17 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       <details>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://ru.wikipedia.org/wiki/Special:FilePath/Logo_1xBet.png" alt=""><h3>1X Bet</h3>
+            <img class="job-favicon" src="https://favicon.im/1xbet.com" alt=""><h3>1X Bet</h3>
           </span>
         </summary>
         <div class="job-content">
           <div class="job-header">
             <div class="job-title">Product Manager Content B2C</div>
             <span class="job-dates">11.2023 — 07.2024</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Контракт</span><span class="job-meta-tag en">Contract</span>
+            <span class="job-meta-tag ru">Белград, Сербия · Офис</span><span class="job-meta-tag en">Belgrade, Serbia · On-site</span>
           </div>
           <div class="job-desc">
             <span class="ru">Развитие контентного направления в iGaming (MENA, CIS, India).</span>
@@ -904,7 +938,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       <details>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://static.vk.ru/vkid/1.1.1328/favicon-new.svg" alt=""><h3>VK</h3>
+            <img class="job-favicon" src="https://vk.ru/favicon.ico" alt=""><h3>VK</h3>
           </span>
         </summary>
         <div class="job-content">
@@ -914,6 +948,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
               <span class="en">Business Development Manager (VK Education)</span>
             </div>
             <span class="job-dates">01.2022 — 06.2022</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Москва · Офис</span><span class="job-meta-tag en">Moscow · On-site</span>
           </div>
           <ul class="ru">
             <li>Развитие EdTech и HRTech направления</li>
@@ -934,7 +972,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
       <details>
         <summary>
           <span class="job-company">
-            <img class="job-favicon" src="https://upload.wikimedia.org/wikipedia/commons/4/45/BestDoctor_Logo.jpg" alt=""><h3>BestDoctor</h3>
+            <img class="job-favicon" src="https://bestdoctor.ru/favicon.ico" alt=""><h3>BestDoctor</h3>
           </span>
         </summary>
         <div class="job-content">
@@ -942,13 +980,17 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             <div class="job-title">Senior Business Development Manager (MedTech/InsurTech)</div>
             <span class="job-dates">04.2021 — 01.2022</span>
           </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Полная занятость</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Москва · Офис</span><span class="job-meta-tag en">Moscow · On-site</span>
+          </div>
           <ul class="ru">
-            <li>Продажи корпоративных ДМС и wellbeing продуктов</li>
-            <li>Запускал новый продукт дистанционной психологической помощи (от идеи до proof of concept и первой продажи)</li>
+            <li>Продажи корпоративного ДМС и wellbeing продуктов</li>
+            <li>Запускал новый продукт дистанционной психологической помощи (от идеи до proof of concept и первых продаж)</li>
           </ul>
           <ul class="en">
-            <li>Sales of corporate voluntary health insurance (VHI) and wellbeing products</li>
-            <li>Launched a new remote psychological support product (from idea to proof of concept and first sale)</li>
+            <li>Sales of corporate health insurance and wellbeing products</li>
+            <li>Launched a new remote psychological support product (from idea to proof of concept and first sales)</li>
           </ul>
         </div>
       </details>
@@ -966,6 +1008,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
           <div class="job-header">
             <div class="job-title">Business Development Manager HRTech</div>
             <span class="job-dates">01.2020 — 04.2021</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Москва · Гибрид</span><span class="job-meta-tag en">Moscow · Hybrid</span>
           </div>
           <ul class="ru">
             <li>Продажи B2B IT-продуктов в сфере HRTech: ATS, HCM, LXP — коробочные продукты, консалтинг, интеграция (REST, SOAP, ADFS, EWS); SaaS, PaaS, on-premise; 152-ФЗ, №25 ФСТЭК</li>
@@ -1000,6 +1046,10 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
             <div class="job-title">Senior Sales Manager</div>
             <span class="job-dates">08.2017 — 01.2020</span>
           </div>
+          <div class="job-meta">
+            <span class="job-meta-tag ru">Full-time</span><span class="job-meta-tag en">Full-time</span>
+            <span class="job-meta-tag ru">Москва · Офис</span><span class="job-meta-tag en">Moscow · On-site</span>
+          </div>
           <ul class="ru">
             <li>B2B продажи маркетинговых решений крупным компаниям (Ростелеком, МегаФон, Danone, PepsiCo и др.)</li>
           </ul>
@@ -1030,7 +1080,6 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
         <span class="tag">CRM</span>
         <span class="tag">Business Analysis</span>
         <span class="tag">A/B Testing</span>
-        <span class="tag">CustDev</span>
       </div>
     </div>
     <div class="skills-group">
@@ -1121,8 +1170,8 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     <div class="edu-item">
       <div class="edu-org ru">Российский Государственный Гуманитарный Университет (РГГУ)</div>
       <div class="edu-org en">Russian State University for the Humanities (RSUH)</div>
-      <div class="edu-degree ru">Управление, Реклама и PR — Высшее образование, 2018</div>
-      <div class="edu-degree en">Management, Advertising &amp; PR — Bachelor's degree, 2018</div>
+      <div class="edu-degree ru">Управление, Реклама и PR, 2018</div>
+      <div class="edu-degree en">Management, Advertising &amp; PR, 2018</div>
     </div>
   </section>
 
@@ -1232,6 +1281,14 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     en: `updated ${_monthsEn[_m]} ${_y}`
   };
 
+  // ── localStorage helpers ──────────────────────────────
+  function saveLang(lang) {
+    try { localStorage.setItem('cv_lang', lang); } catch(e) {}
+  }
+  function loadLang() {
+    try { return localStorage.getItem('cv_lang'); } catch(e) { return null; } 
+  }
+
   function setLang(lang) {
     document.documentElement.lang = lang;
     document.getElementById('page-title').textContent = TITLES[lang];
@@ -1242,6 +1299,7 @@ ym(109079169,'init',{ssr:true,clickmap:true,referrer:document.referrer,url:locat
     const url = new URL(location.href);
     url.searchParams.set('lang', lang);
     history.replaceState(null, '', url);
+    saveLang(lang);
   }
 
   function toggleLang() {
